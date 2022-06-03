@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -107,7 +108,19 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l19-31-jMR" userLabel="Main view">
                                 <rect key="frame" x="0.0" y="124" width="414" height="718"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-DN-mG0">
+                                        <rect key="frame" x="24" y="100" width="366" height="588"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstItem="Qts-DN-mG0" firstAttribute="leading" secondItem="l19-31-jMR" secondAttribute="leading" constant="24" id="5aU-vH-Ub3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qts-DN-mG0" secondAttribute="trailing" constant="24" id="DP3-EO-vCB"/>
+                                    <constraint firstItem="Qts-DN-mG0" firstAttribute="top" secondItem="l19-31-jMR" secondAttribute="top" constant="100" id="evJ-XU-iGg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qts-DN-mG0" secondAttribute="bottom" constant="30" id="tj8-7b-Bn7"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V9M-bf-Olr"/>
@@ -123,6 +136,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yYU-ku-2gA"/>
+                    <connections>
+                        <outlet property="tableView" destination="Qts-DN-mG0" id="Iav-jg-dsR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xae-ZR-XfC" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,5 +172,8 @@
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
