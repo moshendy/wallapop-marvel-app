@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (5.6.1)
+  - CollectionViewPagingLayout (1.1.0)
+  - DataCache (1.6.0)
+  - FTPopOverMenu_Swift (0.4.3)
+  - ObjectMapper (4.2.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - Spring (1.0.6)
+  - SwiftyJSON (5.0.1)
+  - UIView-Shimmer (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - CollectionViewPagingLayout
+  - DataCache
+  - FTPopOverMenu_Swift
+  - ObjectMapper
+  - SDWebImage (~> 5.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - SwiftyJSON
+  - UIView-Shimmer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CollectionViewPagingLayout
+    - DataCache
+    - FTPopOverMenu_Swift
+    - ObjectMapper
+    - SDWebImage
+    - SwiftyJSON
+    - UIView-Shimmer
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  CollectionViewPagingLayout: 2f8d50683bae57ca88f47fa4ab0195c9079582cf
+  DataCache: 5f24b356848a37469dbebec89c28ca88b4ef9294
+  FTPopOverMenu_Swift: 85ac1c04b04f6b4ac394414602c6a71ef3f66cc2
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  UIView-Shimmer: ff0a32c73d67c7dbdea3d9e530538b10d18aea56
+
+PODFILE CHECKSUM: ee381bb456be8bfa82a1a76a9510c3c0a8b6163e
+
+COCOAPODS: 1.11.2

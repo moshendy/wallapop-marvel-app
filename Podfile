@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'Wallapop Marvel App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Wallapop Marvel App
+	
+pod 'SDWebImage', '~> 5.0'
+pod 'FTPopOverMenu_Swift'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+pod 'UIView-Shimmer'
+pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'ObjectMapper'
+pod 'DataCache'
+pod 'CollectionViewPagingLayout'
+
+end
