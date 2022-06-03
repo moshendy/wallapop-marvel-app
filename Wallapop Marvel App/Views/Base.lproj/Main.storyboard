@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="splashVC" title="Splash" id="BYZ-38-t0r" customClass="SplashViewController" customModule="Wallapop_Marvel_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-ON-lbV" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="24" y="348" width="366" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7TI-7j-CQa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="e9P-ON-lbV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="2OQ-qv-gbx"/>
+                            <constraint firstItem="e9P-ON-lbV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6li-sD-rGD"/>
+                            <constraint firstItem="e9P-ON-lbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUb-31-j9V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e9P-ON-lbV" secondAttribute="trailing" constant="24" id="WNq-FF-Mvo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="skt-cO-Thd" kind="show" identifier="homeSegue" id="Y8N-SB-ETx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1qA-or-yy6">
+            <objects>
+                <viewController storyboardIdentifier="homeVC" title="Home" modalPresentationStyle="fullScreen" id="cb6-v1-cBX" customClass="HomeViewController" customModule="Wallapop_Marvel_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngT-ZT-0Mx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzG-ZC-gq7" userLabel="Top view">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W4u-We-V6i" customClass="SpringImageView" customModule="Spring">
+                                        <rect key="frame" x="167" y="10" width="80" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="zJb-tD-vcn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstItem="W4u-We-V6i" firstAttribute="top" secondItem="wzG-ZC-gq7" secondAttribute="top" constant="10" id="0CS-2G-yTq"/>
+                                    <constraint firstAttribute="height" constant="80" id="9o4-Ua-hc5"/>
+                                    <constraint firstAttribute="bottom" secondItem="W4u-We-V6i" secondAttribute="bottom" constant="10" id="R2q-g6-IDE"/>
+                                    <constraint firstItem="W4u-We-V6i" firstAttribute="centerX" secondItem="wzG-ZC-gq7" secondAttribute="centerX" id="eDC-eM-eq5"/>
+                                    <constraint firstItem="W4u-We-V6i" firstAttribute="centerY" secondItem="wzG-ZC-gq7" secondAttribute="centerY" id="oB9-ga-URH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l19-31-jMR" userLabel="Main view">
+                                <rect key="frame" x="0.0" y="124" width="414" height="718"/>
+                                <color key="backgroundColor" name="White"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V9M-bf-Olr"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="wzG-ZC-gq7" firstAttribute="top" secondItem="ngT-ZT-0Mx" secondAttribute="top" constant="44" id="64o-lp-hmr"/>
+                            <constraint firstItem="wzG-ZC-gq7" firstAttribute="leading" secondItem="V9M-bf-Olr" secondAttribute="leading" id="7MG-4h-iIn"/>
+                            <constraint firstAttribute="bottom" secondItem="l19-31-jMR" secondAttribute="bottom" id="8lQ-v6-0aa"/>
+                            <constraint firstItem="l19-31-jMR" firstAttribute="top" secondItem="wzG-ZC-gq7" secondAttribute="bottom" id="AkL-70-SSc"/>
+                            <constraint firstItem="l19-31-jMR" firstAttribute="trailing" secondItem="V9M-bf-Olr" secondAttribute="trailing" id="iqJ-NI-wcT"/>
+                            <constraint firstItem="l19-31-jMR" firstAttribute="leading" secondItem="V9M-bf-Olr" secondAttribute="leading" id="r0I-cS-S3g"/>
+                            <constraint firstItem="V9M-bf-Olr" firstAttribute="trailing" secondItem="wzG-ZC-gq7" secondAttribute="trailing" id="yJe-tX-hJv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yYU-ku-2gA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xae-ZR-XfC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.8550724637682" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SN4-VY-xsJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="skt-cO-Thd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rgS-We-HhN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJw-jC-6en">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cb6-v1-cBX" kind="relationship" relationship="rootViewController" id="0OG-oz-Eyq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozW-R7-ye4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainLogo" width="400" height="284"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
