@@ -30,8 +30,9 @@ class ComicViewController: UIViewController {
         comicDescriptionLabel.text = comicDescription.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
 
         let stringURL = "\(image)\(ApisURL.imagePortraitExt)jpg"
+        print(stringURL)
         if stringURL.contains("image_not_available") {
-            comicImage.image = UIImage(systemName: "photo.circle")
+            comicImage.image = UIImage(named: "mainLogo")
         }else{
             comicImage.sd_setImage(with: URL(string: stringURL ), placeholderImage: UIImage(named: "mainLogo"))
         }

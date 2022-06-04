@@ -11,7 +11,8 @@ class ComicsViewModel: NSObject {
 
     private var comicsService: ComicsServiceProtocol
     var reloadTableView: (() -> Void)?
-    
+    var reloadCollectionView: (() -> Void)?
+
     var comics = Comics()
     var comicDC = [ComicDataContainer]()
 
@@ -22,6 +23,7 @@ class ComicsViewModel: NSObject {
     var comicCellViewModels = [ComicCellViewModel]() {
         didSet {
             reloadTableView?()
+            reloadCollectionView?()
         }
     }
 
