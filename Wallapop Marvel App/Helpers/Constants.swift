@@ -12,5 +12,6 @@ struct Constants{
     static let homeVC: String = "homeVC"
     static let splashVC: String = "splashVC"
     static let homeSegue: String = "homeSegue"
-    
+    static let viewComicSegue: String = "viewComicSegue"
+
 }

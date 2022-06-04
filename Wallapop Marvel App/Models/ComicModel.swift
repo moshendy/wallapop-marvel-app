@@ -40,7 +40,6 @@ class Comic: Mappable{
     var description: String = ""
     var pageCount: Int = 0
     var prices: [ComicPrice]?
-    var creatorSummary: [CreatorSummary]?
     var thumbnail: Thumbnail?
 
     required init?(map: Map) {
@@ -88,16 +87,4 @@ class ComicPrice: Mappable{
 
 }
 
-//MARK: - Comic Creators Model
-//--------------------------------
-class CreatorSummary: Mappable{
-    
-    var name: String = ""
-    
-    required init?(map: Map){
-    }
-    func mapping(map: Map) {
-        name <- map["name"]
-    }
-}
 

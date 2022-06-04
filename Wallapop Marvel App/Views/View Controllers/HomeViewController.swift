@@ -19,7 +19,8 @@ class HomeViewController: UIViewController {
 
     var page = 0
     var searchText = ""
-    
+    var selectedCellIndex : IndexPath?
+
     
     lazy var viewModel = {
         ComicsViewModel()
@@ -41,13 +42,13 @@ class HomeViewController: UIViewController {
         tableView.register(ComicTableViewCell.nib, forCellReuseIdentifier: ComicTableViewCell.identifier)
 
         MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
+        initViewModel()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         // Check For Internet Connection
-        if (MyController.isConnectedToInternet() != 0){
-            initViewModel()
-        }else{
+        if (MyController.isConnectedToInternet() == 0){
             MyController.viewAlertDialog(vc: self, title: "No internet connection", message: "")
         }
     }
@@ -80,6 +81,20 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.viewComicSegue{
+            if let selectedCell = selectedCellIndex{
+                let cellVM = viewModel.getCellViewModel(at: selectedCell)
+                let destinationViewController = segue.destination as! ComicViewController
+                destinationViewController.comicTitle = cellVM.title
+                destinationViewController.comicDescription = cellVM.description
+                destinationViewController.pageCount = cellVM.pageCount
+                destinationViewController.image = cellVM.image
+                destinationViewController.price = cellVM.price
+            }
+        }
+    }
 }
 // MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
@@ -100,8 +115,8 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cellVM = viewModel.getCellViewModel(at: indexPath)
-        print(cellVM.title)
+        selectedCellIndex = indexPath
+        performSegue(withIdentifier: Constants.viewComicSegue, sender: self)
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
         

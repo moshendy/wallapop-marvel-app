@@ -16,8 +16,8 @@ struct ApisURL{
     
     static let _headers : HTTPHeaders = ["*":"*"]
 
-    //    static let imageExt: String = "/landscape_incredible."
-    static let imageExt: String = "/standard_incredible."
+    static let imagePortraitExt: String = "/portrait_incredible."
+    static let imageStandardExt: String = "/standard_incredible."
 
-    static let comicUrl: String = "/comics?format=comic&limit=20"
+    static let comicUrl: String = "/comics?limit=20"
 }

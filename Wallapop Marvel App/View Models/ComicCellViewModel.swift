@@ -13,4 +13,9 @@ struct ComicCellViewModel {
     var title: String = ""
     var image: String = ""
     var imageExt: String = ""
+    var description: String = ""
+    var variantDescription: String = ""
+    var pageCount: Int = 0
+    var price: Double = 0.0
+
 }

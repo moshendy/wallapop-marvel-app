@@ -21,7 +21,7 @@ class ComicTableViewCell: UITableViewCell {
         didSet {
             nameLabel.text = cellViewModel?.title
             
-            let stringURL = "\(cellViewModel?.image ?? "")\(ApisURL.imageExt)\(cellViewModel?.imageExt ?? "")"
+            let stringURL = "\(cellViewModel?.image ?? "")\(ApisURL.imageStandardExt)\(cellViewModel?.imageExt ?? "")"
             if stringURL.contains("image_not_available") {
                 cellImage.image = UIImage(named: "mainLogo")
             }else{

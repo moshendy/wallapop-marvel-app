@@ -44,6 +44,7 @@
 		641774FD284A6C7800495FC9 /* ComicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641774FC284A6C7800495FC9 /* ComicCellViewModel.swift */; };
 		64177500284A6E2900495FC9 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641774FF284A6E2900495FC9 /* ComicTableViewCell.swift */; };
 		64177502284A6F7400495FC9 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64177501284A6F7400495FC9 /* ComicTableViewCell.xib */; };
+		64177504284AFB1D00495FC9 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64177503284AFB1D00495FC9 /* ComicViewController.swift */; };
 		C48BB53CA3E3A40168ACE7D1 /* Pods_Wallapop_Marvel_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920626DED91F9C3FEE23426A /* Pods_Wallapop_Marvel_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		641774FC284A6C7800495FC9 /* ComicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCellViewModel.swift; sourceTree = "<group>"; };
 		641774FF284A6E2900495FC9 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
 		64177501284A6F7400495FC9 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
+		64177503284AFB1D00495FC9 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		773C39D8A633EA8B18FD5992 /* Pods-Wallapop Marvel App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App.debug.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App/Pods-Wallapop Marvel App.debug.xcconfig"; sourceTree = "<group>"; };
 		920626DED91F9C3FEE23426A /* Pods_Wallapop_Marvel_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallapop_Marvel_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33963F7829562CC90060376 /* Pods-Wallapop Marvel App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App.release.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App/Pods-Wallapop Marvel App.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				641774EC284A50D500495FC9 /* HomeViewController.swift */,
+				64177503284AFB1D00495FC9 /* ComicViewController.swift */,
 				641774AC284A4BEE00495FC9 /* SplashViewController.swift */,
 			);
 			path = "View Controllers";
@@ -385,6 +388,7 @@
 			files = (
 				641774F8284A66A000495FC9 /* ComicsService.swift in Sources */,
 				641774C3284A4EAD00495FC9 /* Constants.swift in Sources */,
+				64177504284AFB1D00495FC9 /* ComicViewController.swift in Sources */,
 				641774EF284A5EC700495FC9 /* MyController.swift in Sources */,
 				641774F6284A63F200495FC9 /* ApisURL.swift in Sources */,
 				641774AD284A4BEE00495FC9 /* SplashViewController.swift in Sources */,

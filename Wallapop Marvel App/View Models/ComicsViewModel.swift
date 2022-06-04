@@ -78,8 +78,12 @@ class ComicsViewModel: NSObject {
         let title = comic.title
         let image = comic.thumbnail?.path ?? ""
         let imageExt = comic.thumbnail?.ext ?? ""
+        let variantDescription = comic.variantDescription
+        let description = comic.description
+        let pageCount = comic.pageCount
+        let price = comic.prices?[0].price
 
-        return ComicCellViewModel(id: id, title: title, image: image, imageExt: imageExt)
+        return ComicCellViewModel(id: id, title: title, image: image, imageExt: imageExt, description: description, variantDescription: variantDescription, pageCount: pageCount, price: price ?? 0)
     }
     func getCellViewModel(at indexPath: IndexPath) -> ComicCellViewModel {
         return comicCellViewModels[indexPath.row]
