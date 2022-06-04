@@ -10,13 +10,14 @@ import Foundation
 class ComicsViewModel: NSObject {
 
     private var comicsService: ComicsServiceProtocol
+    var reloadTableView: (() -> Void)?
+    
+    var comics = Comics()
+    var comicDC = [ComicDataContainer]()
 
     init(comicsService: ComicsServiceProtocol = ComicsService()) {
         self.comicsService = comicsService
     }
-    
-    var reloadTableView: (() -> Void)?
-    var comics = Comics()
     
     var comicCellViewModels = [ComicCellViewModel]() {
         didSet {
@@ -24,24 +25,53 @@ class ComicsViewModel: NSObject {
         }
     }
 
-    func getComics() {
-        comicsService.getComics { success, model, error in
-            if success, let comics = model {
-                self.fetchData(comics: comics)
+
+    func getComics(offset: Int) {
+        if offset == 0{
+            comicCellViewModels = []
+        }
+
+        comicsService.getComics(offset: offset){ success, model, container, error in
+            if success, let comics = model, let container = container {
+                self.fetchData(comics: comics, comicDC: container)
             } else {
                 print(error!)
             }
         }
     }
-
-    func fetchData(comics: Comics) {
-        self.comics = comics // Cache
+    func fetchData(comics: Comics, comicDC: ComicDataContainer) {
+        self.comics = comics
         var vms = [ComicCellViewModel]()
         for comic in comics {
             vms.append(createCellModel(comic: comic))
         }
-        comicCellViewModels = vms
+        comicCellViewModels = comicCellViewModels + vms
+        self.comicDC = [comicDC]
     }
+
+    func getComicsByTitle(offset: Int,title: String) {
+        if offset == 0{
+            comicCellViewModels = []
+        }
+        comicsService.getComicsByTitle(offset: offset,title: title){ success, model, container, error in
+            if success, let comics = model, let container = container {
+                self.fetchFilteredData(comics: comics, comicDC: container)
+            } else {
+                print(error!)
+            }
+        }
+    }
+    func fetchFilteredData(comics: Comics, comicDC: ComicDataContainer) {
+        self.comics = comics
+        var vms = [ComicCellViewModel]()
+        for comic in comics {
+            vms.append(createCellModel(comic: comic))
+        }
+        comicCellViewModels = comicCellViewModels + vms
+        self.comicDC = [comicDC]
+    }
+    
+
     
     func createCellModel(comic: Comic) -> ComicCellViewModel {
         let id = comic.id

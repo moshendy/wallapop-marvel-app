@@ -8,6 +8,7 @@
 import UIKit
 
 class ComicTableViewCell: UITableViewCell {
+    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cellImage: UIImageView!
 
@@ -28,5 +29,4 @@ class ComicTableViewCell: UITableViewCell {
             }
         }
     }
-
 }

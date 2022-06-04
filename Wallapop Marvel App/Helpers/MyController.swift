@@ -161,8 +161,7 @@ class MyController {
     
     public static func showDefaultLoading(vc: UIViewController,blur:Bool,Dark:Bool = false,colorName : UIColor){
         vc.view.isUserInteractionEnabled = false
-        let screenSize: CGRect = UIScreen.main.bounds
-        
+
         let activityView = UIActivityIndicatorView(style: .large)
         activityView.color = colorName
         let myView = UIView()
@@ -191,7 +190,6 @@ class MyController {
     
     public static func hideLoading(vc: UIViewController , timeSeconds: Double = 0){
         DispatchQueue.main.asyncAfter(deadline: .now() + timeSeconds) {
-            
             vc.view.isUserInteractionEnabled = true
             let subViews = vc.view.subviews
             for subview in subViews{

@@ -12,13 +12,17 @@ import ObjectMapper
 
 
 protocol ComicsServiceProtocol {
-    func getComics(completion: @escaping (_ success: Bool, _ results: Comics?, _ error: String?) -> ())
+    func getComics(offset: Int,completion: @escaping (_ success: Bool, _ results: Comics?, _ mainContainer: ComicDataContainer?, _ error: String?) -> ())
+    func getComicsByTitle(offset: Int,title: String,completion: @escaping (_ success: Bool, _ results: Comics?, _ mainContainer: ComicDataContainer?, _ error: String?) -> ())
+
 }
 
 class ComicsService: ComicsServiceProtocol {
     
-    func getComics(completion: @escaping (Bool, Comics?, String?) -> ()) {
-        AF.request(ApisURL.apiUrl+ApisURL.comicUrl+ApisURL.apiKey, method: .get,encoding: URLEncoding.httpBody, headers: ApisURL._headers)
+    func getComics(offset: Int,completion: @escaping (Bool, Comics?,ComicDataContainer?, String?) -> ()) {
+        
+        let apiURL = "\(ApisURL.apiUrl)\(ApisURL.comicUrl)\(ApisURL.apiKey)&offset=\(offset)"
+        AF.request(apiURL, method: .get,encoding: URLEncoding.httpBody, headers: ApisURL._headers)
             .responseJSON { response  in
                 
                 switch response.result {
@@ -27,13 +31,39 @@ class ComicsService: ComicsServiceProtocol {
                     let responseJSON = JSON(value)
                     if response.response?.statusCode == 200{
                         let mainJSON = Mapper<Comic>().mapArray(JSONArray: responseJSON["data"]["results"].rawValue as! [[String : Any]])
-                        completion(true, mainJSON, nil)
+                        let mainContainer = Mapper<ComicDataContainer>().map(JSON: responseJSON["data"].rawValue as! [String : Any])
+                        
+                        completion(true, mainJSON,mainContainer, nil)
                     }else{
-                        completion(false, nil, "Error: Trying to parse Comics to model")
+                        completion(false, nil, nil, "Error: Trying to parse Comics to model")
                     }
                 case .failure(_):
-                    completion(false, nil, "Error: Api Failure")
+                    completion(false, nil, nil, "Error: Api Failure")
                 }
             }
     }
+    func getComicsByTitle(offset: Int,title: String,completion: @escaping (Bool, Comics?,ComicDataContainer?, String?) -> ()) {
+        
+        let apiURL = "\(ApisURL.apiUrl)\(ApisURL.comicUrl)\(ApisURL.apiKey)&offset=\(offset)&titleStartsWith=\(title)"
+        AF.request(apiURL, method: .get,encoding: URLEncoding.httpBody, headers: ApisURL._headers)
+            .responseJSON { response  in
+                
+                switch response.result {
+                case .success(let value):
+                    
+                    let responseJSON = JSON(value)
+                    if response.response?.statusCode == 200{
+                        let mainJSON = Mapper<Comic>().mapArray(JSONArray: responseJSON["data"]["results"].rawValue as! [[String : Any]])
+                        let mainContainer = Mapper<ComicDataContainer>().map(JSON: responseJSON["data"].rawValue as! [String : Any])
+                        
+                        completion(true, mainJSON,mainContainer, nil)
+                    }else{
+                        completion(false, nil, nil, "Error: Trying to parse Comics to model")
+                    }
+                case .failure(_):
+                    completion(false, nil, nil, "Error: Api Failure")
+                }
+            }
+    }
+
 }

@@ -5,9 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Splash-->
         <scene sceneID="tne-QT-ifu">
@@ -17,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-ON-lbV" customClass="SpringImageView" customModule="Spring">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-ON-lbV" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="24" y="348" width="366" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="7TI-7j-CQa"/>
@@ -53,6 +57,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="logo" destination="e9P-ON-lbV" id="MT8-2H-DsM"/>
                         <segue destination="skt-cO-Thd" kind="show" identifier="homeSegue" id="Y8N-SB-ETx"/>
                     </connections>
                 </viewController>
@@ -96,6 +101,18 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbw-uw-DiH">
+                                        <rect key="frame" x="330" y="0.0" width="60" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Uni-0V-4nJ"/>
+                                        </constraints>
+                                        <color key="tintColor" name="White"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="toggleSeachBarBox:" destination="cb6-v1-cBX" eventType="touchUpInside" id="8lq-mX-1Lc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
@@ -103,22 +120,79 @@
                                     <constraint firstAttribute="height" constant="80" id="9o4-Ua-hc5"/>
                                     <constraint firstAttribute="bottom" secondItem="W4u-We-V6i" secondAttribute="bottom" constant="10" id="R2q-g6-IDE"/>
                                     <constraint firstItem="W4u-We-V6i" firstAttribute="centerX" secondItem="wzG-ZC-gq7" secondAttribute="centerX" id="eDC-eM-eq5"/>
+                                    <constraint firstItem="Xbw-uw-DiH" firstAttribute="top" secondItem="wzG-ZC-gq7" secondAttribute="top" id="ntq-n8-Plx"/>
                                     <constraint firstItem="W4u-We-V6i" firstAttribute="centerY" secondItem="wzG-ZC-gq7" secondAttribute="centerY" id="oB9-ga-URH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xbw-uw-DiH" secondAttribute="bottom" id="sJv-FH-cJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xbw-uw-DiH" secondAttribute="trailing" constant="24" id="wOD-7P-d8k"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l19-31-jMR" userLabel="Main view">
                                 <rect key="frame" x="0.0" y="124" width="414" height="718"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpR-lY-kvJ">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="0.0"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for comics" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQR-Mr-PN6">
+                                                <rect key="frame" x="24" y="0.0" width="366" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                        <color key="value" systemColor="systemGrayColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray5Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstItem="wQR-Mr-PN6" firstAttribute="top" secondItem="DpR-lY-kvJ" secondAttribute="top" id="E2Q-nM-5Xh"/>
+                                            <constraint firstItem="wQR-Mr-PN6" firstAttribute="leading" secondItem="DpR-lY-kvJ" secondAttribute="leading" constant="24" id="Io1-bH-vna"/>
+                                            <constraint firstAttribute="trailing" secondItem="wQR-Mr-PN6" secondAttribute="trailing" constant="24" id="PGU-2V-ZYb"/>
+                                            <constraint firstAttribute="bottom" secondItem="wQR-Mr-PN6" secondAttribute="bottom" id="RuH-Gx-DDW"/>
+                                            <constraint firstAttribute="height" id="Z0H-oB-rPD"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-eH-X9m">
+                                        <rect key="frame" x="24" y="20" width="366" height="31"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no results." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuS-mT-bnZ">
+                                        <rect key="frame" x="24" y="343.5" width="366" height="31"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-DN-mG0">
-                                        <rect key="frame" x="24" y="100" width="366" height="588"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="24" y="66" width="366" height="622"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
+                                    <constraint firstItem="mLP-eH-X9m" firstAttribute="leading" secondItem="l19-31-jMR" secondAttribute="leading" constant="24" id="2RU-f8-zCh"/>
+                                    <constraint firstAttribute="trailing" secondItem="mLP-eH-X9m" secondAttribute="trailing" constant="24" id="5Rk-GL-xkZ"/>
                                     <constraint firstItem="Qts-DN-mG0" firstAttribute="leading" secondItem="l19-31-jMR" secondAttribute="leading" constant="24" id="5aU-vH-Ub3"/>
+                                    <constraint firstItem="xuS-mT-bnZ" firstAttribute="leading" secondItem="l19-31-jMR" secondAttribute="leading" constant="24" id="9br-1g-oie"/>
                                     <constraint firstAttribute="trailing" secondItem="Qts-DN-mG0" secondAttribute="trailing" constant="24" id="DP3-EO-vCB"/>
-                                    <constraint firstItem="Qts-DN-mG0" firstAttribute="top" secondItem="l19-31-jMR" secondAttribute="top" constant="100" id="evJ-XU-iGg"/>
+                                    <constraint firstItem="Qts-DN-mG0" firstAttribute="top" secondItem="mLP-eH-X9m" secondAttribute="bottom" constant="15" id="F8h-YP-zPa"/>
+                                    <constraint firstItem="mLP-eH-X9m" firstAttribute="top" secondItem="DpR-lY-kvJ" secondAttribute="bottom" constant="10" id="Kif-Ec-XPa"/>
+                                    <constraint firstItem="DpR-lY-kvJ" firstAttribute="leading" secondItem="l19-31-jMR" secondAttribute="leading" id="XY2-eq-Ij2"/>
+                                    <constraint firstItem="xuS-mT-bnZ" firstAttribute="centerX" secondItem="l19-31-jMR" secondAttribute="centerX" id="a6U-jm-gE4"/>
+                                    <constraint firstAttribute="trailing" secondItem="xuS-mT-bnZ" secondAttribute="trailing" constant="24" id="dRX-4b-Odx"/>
+                                    <constraint firstAttribute="trailing" secondItem="DpR-lY-kvJ" secondAttribute="trailing" id="e9Y-Hb-udp"/>
+                                    <constraint firstItem="xuS-mT-bnZ" firstAttribute="centerY" secondItem="l19-31-jMR" secondAttribute="centerY" id="eqj-1w-1Dz"/>
+                                    <constraint firstItem="DpR-lY-kvJ" firstAttribute="top" secondItem="l19-31-jMR" secondAttribute="top" constant="10" id="j3o-0i-Rdp"/>
                                     <constraint firstAttribute="bottom" secondItem="Qts-DN-mG0" secondAttribute="bottom" constant="30" id="tj8-7b-Bn7"/>
                                 </constraints>
                             </view>
@@ -137,6 +211,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="yYU-ku-2gA"/>
                     <connections>
+                        <outlet property="noResultsLabel" destination="xuS-mT-bnZ" id="jx8-Sd-UXW"/>
+                        <outlet property="searchHeightCons" destination="Z0H-oB-rPD" id="Ibg-Kk-NeA"/>
+                        <outlet property="searchTextField" destination="wQR-Mr-PN6" id="RDR-hx-Xec"/>
                         <outlet property="tableView" destination="Qts-DN-mG0" id="Iav-jg-dsR"/>
                     </connections>
                 </viewController>
@@ -165,6 +242,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="mainLogo" width="400" height="284"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,8 +250,11 @@
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
