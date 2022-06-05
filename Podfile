@@ -8,13 +8,9 @@ target 'Wallapop Marvel App' do
   # Pods for Wallapop Marvel App
 	
 pod 'SDWebImage', '~> 5.0'
-pod 'FTPopOverMenu_Swift'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
-pod 'UIView-Shimmer'
 pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'ObjectMapper'
-pod 'DataCache'
-pod 'CollectionViewPagingLayout'
 
 end

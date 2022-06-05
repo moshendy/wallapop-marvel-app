@@ -25,39 +25,35 @@ class ComicViewController: UIViewController {
     var comicTitle = ""
     var comicDescription = ""
     var pageCount = 0
-    var image = ""
     var price = 0.0
 
+    var imageui : UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     override func viewWillAppear(_ animated: Bool) {
+        
         comicLabel.text = comicTitle
-        comicDescriptionLabel.text = comicDescription.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
         priceLabel.text = "Price: \(price)"
         formatLabel.text = "Format: \(format)"
-        
+        comicDescriptionLabel.text = comicDescription.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
+
         if let newDate = MyController.convertISODate(dateString: onSaleDate){
             publishedDateLabel.text = "Published Date: \(newDate)"
         }else{
             publishedDateLabel.text = ""
         }
+        
         if let newDate = MyController.convertISODate(dateString: focDate){
             focDateLabel.text = "FocDate: \(newDate)"
         }else{
             focDateLabel.text = ""
         }
 
-        
-        
-        let stringURL = "\(image)\(ApisURL.imagePortraitExt)jpg"
-        if stringURL.contains("image_not_available") {
-            comicImage.image = UIImage(named: "mainLogo")
-        }else{
-            comicImage.sd_setImage(with: URL(string: stringURL ), placeholderImage: UIImage(named: "mainLogo"))
-        }
+        comicImage.image = imageui
+
 
     }
     

@@ -6,9 +6,6 @@
 //
 
 import UIKit
-import ObjectMapper
-import Alamofire
-import SwiftyJSON
 import Spring
 
 class HomeViewController: UIViewController {
@@ -88,20 +85,16 @@ class HomeViewController: UIViewController {
     func setAnimationProperties(){
         self.collectionviewContainer.velocity = 0.7
         self.collectionviewContainer.duration = 1
-        self.collectionviewContainer.delay = 0
         self.collectionviewContainer.force = 1
-        self.collectionviewContainer.damping = 1
 
-        self.tableviewContainer.damping = 1
         self.tableviewContainer.force = 1
-        self.tableviewContainer.delay = 0
         self.tableviewContainer.duration = 1
         self.tableviewContainer.velocity = 0.7
     }
     
     @IBAction func toggleSeachBarBox(_ sender: UIButton) {
         if searchHeightCons.constant == 0{
-            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn) {
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
                 self.searchHeightCons.constant = 50
                 self.view.layoutIfNeeded()
                 sender.setImage(UIImage(systemName: "xmark"), for: .normal)
@@ -109,7 +102,7 @@ class HomeViewController: UIViewController {
             }
         }else{
             self.view.endEditing(true)
-            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn) {
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
                 self.searchTextField.isHidden = true
                 self.searchHeightCons.constant = 0
                 self.view.layoutIfNeeded()
@@ -121,8 +114,6 @@ class HomeViewController: UIViewController {
         setAnimationProperties()
         if sender.tag == 1{
             if defaultLayout != "Table"{
-                MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
-
                 defaultLayout = "Table"
                 self.collectionviewContainer.animation = "squeezeRight"
                 self.tableviewContainer.animation = "squeezeLeft"
@@ -130,34 +121,30 @@ class HomeViewController: UIViewController {
                 listBtn.setImage(UIImage(systemName: "list.bullet.rectangle.fill"), for: .normal)
 
                 collectionviewContainer.animateToNext {
-                    UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseIn) {
+                    UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
                         self.collectionviewContainer.alpha = 0
                         self.tableviewContainer.alpha = 1
                         self.view.layoutIfNeeded()
                     }
-                    self.tableviewContainer.animate()
-                    MyController.hideLoading(vc: self)
                 }
+                self.tableviewContainer.animate()
             }
         }else{
-            
             if defaultLayout != "Grid"{
-                MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
-
                 defaultLayout = "Grid"
                 gridBtn.setImage(UIImage(systemName: "square.grid.2x2.fill"), for: .normal)
                 listBtn.setImage(UIImage(systemName: "list.bullet.rectangle"), for: .normal)
                 self.tableviewContainer.animation = "squeezeRight"
                 self.collectionviewContainer.animation = "squeezeLeft"
                 tableviewContainer.animateToNext {
-                    UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseIn) {
+                    UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
                         self.tableviewContainer.alpha = 0
                         self.collectionviewContainer.alpha = 1
                         self.view.layoutIfNeeded()
                     }
-                    self.collectionviewContainer.animate()
-                    MyController.hideLoading(vc: self)
                 }
+                self.collectionviewContainer.animate()
+
             }
         }
     }
@@ -179,11 +166,18 @@ class HomeViewController: UIViewController {
                 destinationViewController.comicTitle = cellVM.title
                 destinationViewController.comicDescription = cellVM.description
                 destinationViewController.pageCount = cellVM.pageCount
-                destinationViewController.image = cellVM.image
                 destinationViewController.price = cellVM.price
                 destinationViewController.format = cellVM.format
                 destinationViewController.focDate = cellVM.focDate
                 destinationViewController.onSaleDate = cellVM.onSaleDate
+                
+                if defaultLayout == "Table"{
+                    let cell = tableView.cellForRow(at: selectedCell) as? ComicTableViewCell
+                    destinationViewController.imageui = (cell?.cellImage.image)!
+                }else{
+                    let cell = collectionView.cellForItem(at: selectedCell) as? ComicCollectionViewCell
+                    destinationViewController.imageui = (cell?.cellImage.image)!
+                }
 
             }
         }
@@ -193,7 +187,7 @@ class HomeViewController: UIViewController {
 // MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UIScreen.main.bounds.height-225) / 4
+        return 200
     }
 }
 
@@ -270,21 +264,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 
 // MARK: - UITextFieldDelegate
 extension HomeViewController: UITextFieldDelegate{
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        if searchText != textField.text ?? ""{
-//            searchText = textField.text ?? ""
-//
-//            if !MyController.isEmptyString(text: textField.text ?? ""){
-//                page = 0
-//                viewModel.getComicsByTitle(offset: page, title: textField.text!)
-//            }else{
-//                page = 0
-//                viewModel.getComics(offset:page)
-//            }
-//        }
-//        MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
-//
-//    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         if searchText != textField.text ?? ""{
