@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     var defaultLayout = "Table"
 
     
-    var viewModel = {
+    lazy var viewModel = {
         ComicsViewModel()
     }()
     
@@ -181,6 +181,10 @@ class HomeViewController: UIViewController {
                 destinationViewController.pageCount = cellVM.pageCount
                 destinationViewController.image = cellVM.image
                 destinationViewController.price = cellVM.price
+                destinationViewController.format = cellVM.format
+                destinationViewController.focDate = cellVM.focDate
+                destinationViewController.onSaleDate = cellVM.onSaleDate
+
             }
         }
     }
@@ -260,12 +264,27 @@ extension HomeViewController: UICollectionViewDataSource{
 // MARK: - UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: (collectionView.frame.width/2)-10, height: 210)
+            return CGSize(width: (collectionView.frame.width/2)-10, height: 240)
     }
 }
 
 // MARK: - UITextFieldDelegate
 extension HomeViewController: UITextFieldDelegate{
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        if searchText != textField.text ?? ""{
+//            searchText = textField.text ?? ""
+//
+//            if !MyController.isEmptyString(text: textField.text ?? ""){
+//                page = 0
+//                viewModel.getComicsByTitle(offset: page, title: textField.text!)
+//            }else{
+//                page = 0
+//                viewModel.getComics(offset:page)
+//            }
+//        }
+//        MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
+//
+//    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         if searchText != textField.text ?? ""{

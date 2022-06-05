@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-ON-lbV" customClass="SpringImageView" customModule="Spring">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-ON-lbV" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="24" y="348" width="366" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="7TI-7j-CQa"/>
@@ -77,30 +78,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzG-ZC-gq7" userLabel="Top view">
                                 <rect key="frame" x="0.0" y="56" width="414" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W4u-We-V6i" customClass="SpringImageView" customModule="Spring">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W4u-We-V6i">
                                         <rect key="frame" x="167" y="10" width="80" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="zJb-tD-vcn"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="damping">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbw-uw-DiH">
                                         <rect key="frame" x="330" y="0.0" width="60" height="80"/>
@@ -384,26 +366,72 @@
                                         <color key="textColor" name="White"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXTENDED CREDITS AND INFO" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoO-P5-WQf">
+                                        <rect key="frame" x="24" y="379" width="366" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Format" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-Si-cyt">
+                                        <rect key="frame" x="24" y="418" width="366" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DT-wd-DQp">
-                                        <rect key="frame" x="199" y="104" width="191" height="27"/>
-                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="19"/>
+                                        <rect key="frame" x="199" y="143" width="191" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNL-lb-06H">
+                                        <rect key="frame" x="199" y="104" width="191" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-EC-aUf">
+                                        <rect key="frame" x="24" y="454" width="366" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOC Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-At-40N">
+                                        <rect key="frame" x="24" y="490" width="366" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
                                         <color key="textColor" name="White"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FoO-P5-WQf" secondAttribute="trailing" constant="24" id="2mD-El-t87"/>
+                                    <constraint firstItem="fYX-EC-aUf" firstAttribute="top" secondItem="bdO-Si-cyt" secondAttribute="bottom" constant="15" id="4Bh-Nm-ByN"/>
+                                    <constraint firstItem="S6b-At-40N" firstAttribute="top" secondItem="fYX-EC-aUf" secondAttribute="bottom" constant="15" id="5a8-EQ-RSm"/>
                                     <constraint firstItem="PfX-dy-1AU" firstAttribute="top" secondItem="QdN-s5-bE2" secondAttribute="top" id="7wm-ep-a9y"/>
+                                    <constraint firstAttribute="trailing" secondItem="bdO-Si-cyt" secondAttribute="trailing" constant="24" id="AWa-PX-D7K"/>
                                     <constraint firstAttribute="trailing" secondItem="PfX-dy-1AU" secondAttribute="trailing" id="B5r-z3-e8k"/>
+                                    <constraint firstItem="bdO-Si-cyt" firstAttribute="top" secondItem="FoO-P5-WQf" secondAttribute="bottom" constant="15" id="CW0-yJ-eVe"/>
                                     <constraint firstItem="PGQ-Rf-SHW" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="DJ9-er-I60"/>
                                     <constraint firstItem="7Ek-SI-Vjf" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="LXj-Hi-W9W"/>
-                                    <constraint firstItem="8DT-wd-DQp" firstAttribute="top" secondItem="PfX-dy-1AU" secondAttribute="bottom" constant="24" id="Ngc-hQ-hgd"/>
+                                    <constraint firstAttribute="trailing" secondItem="fYX-EC-aUf" secondAttribute="trailing" constant="24" id="MH2-9X-Uu5"/>
+                                    <constraint firstItem="S6b-At-40N" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="MIH-Jq-ju9"/>
+                                    <constraint firstItem="bdO-Si-cyt" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="MO5-Gi-kCA"/>
+                                    <constraint firstItem="fYX-EC-aUf" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="MxQ-6e-3fR"/>
+                                    <constraint firstItem="oNL-lb-06H" firstAttribute="leading" secondItem="8DT-wd-DQp" secondAttribute="leading" id="NQ7-e0-wKd"/>
                                     <constraint firstItem="PfX-dy-1AU" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" id="R0a-ZB-fVc"/>
                                     <constraint firstItem="8DT-wd-DQp" firstAttribute="leading" secondItem="7Ek-SI-Vjf" secondAttribute="trailing" constant="15" id="TfH-y1-bup"/>
                                     <constraint firstItem="7Ek-SI-Vjf" firstAttribute="top" secondItem="PfX-dy-1AU" secondAttribute="bottom" constant="24" id="Xb2-PV-7Di"/>
-                                    <constraint firstAttribute="bottom" secondItem="PGQ-Rf-SHW" secondAttribute="bottom" constant="24" id="jvr-K8-vMV"/>
+                                    <constraint firstItem="oNL-lb-06H" firstAttribute="trailing" secondItem="8DT-wd-DQp" secondAttribute="trailing" id="Xi4-bJ-Sh3"/>
+                                    <constraint firstItem="FoO-P5-WQf" firstAttribute="leading" secondItem="QdN-s5-bE2" secondAttribute="leading" constant="24" id="Y1a-e0-QEr"/>
+                                    <constraint firstItem="8DT-wd-DQp" firstAttribute="top" secondItem="oNL-lb-06H" secondAttribute="bottom" constant="15" id="m7t-1L-SQg"/>
+                                    <constraint firstItem="bdO-Si-cyt" firstAttribute="top" secondItem="FoO-P5-WQf" secondAttribute="bottom" constant="15" id="nKF-pS-zFD"/>
                                     <constraint firstItem="PGQ-Rf-SHW" firstAttribute="top" relation="lessThanOrEqual" secondItem="8DT-wd-DQp" secondAttribute="bottom" constant="197" id="oAV-rV-heg"/>
                                     <constraint firstItem="PGQ-Rf-SHW" firstAttribute="top" secondItem="7Ek-SI-Vjf" secondAttribute="bottom" constant="24" id="odM-eg-Y3E"/>
+                                    <constraint firstAttribute="trailing" secondItem="S6b-At-40N" secondAttribute="trailing" constant="24" id="pU4-wm-114"/>
+                                    <constraint firstAttribute="bottom" secondItem="S6b-At-40N" secondAttribute="bottom" constant="30" id="qGA-8U-2O4"/>
+                                    <constraint firstItem="oNL-lb-06H" firstAttribute="top" secondItem="PfX-dy-1AU" secondAttribute="bottom" constant="24" id="rAq-UR-GtJ"/>
                                     <constraint firstAttribute="trailing" secondItem="PGQ-Rf-SHW" secondAttribute="trailing" constant="24" id="uxP-r1-15K"/>
+                                    <constraint firstItem="FoO-P5-WQf" firstAttribute="top" secondItem="PGQ-Rf-SHW" secondAttribute="bottom" constant="30" id="xZQ-D8-0VK"/>
                                     <constraint firstAttribute="trailing" secondItem="8DT-wd-DQp" secondAttribute="trailing" constant="24" id="zRF-Nl-Bvl"/>
                                 </constraints>
                             </scrollView>
@@ -423,7 +451,11 @@
                     <connections>
                         <outlet property="comicDescriptionLabel" destination="PGQ-Rf-SHW" id="0jO-Ni-bbV"/>
                         <outlet property="comicImage" destination="7Ek-SI-Vjf" id="DWO-Ih-SXJ"/>
-                        <outlet property="comicLabel" destination="8DT-wd-DQp" id="epw-UA-Zgy"/>
+                        <outlet property="comicLabel" destination="oNL-lb-06H" id="ns5-Fc-GVu"/>
+                        <outlet property="focDateLabel" destination="S6b-At-40N" id="yed-jG-DAb"/>
+                        <outlet property="formatLabel" destination="bdO-Si-cyt" id="8y2-ka-5Vu"/>
+                        <outlet property="priceLabel" destination="fYX-EC-aUf" id="KnU-eg-rid"/>
+                        <outlet property="publishedDateLabel" destination="8DT-wd-DQp" id="oXJ-Uw-gZD"/>
                         <outlet property="scrollViewMainWidth" destination="q7I-VC-kzo" id="ZOn-HT-7vC"/>
                     </connections>
                 </viewController>

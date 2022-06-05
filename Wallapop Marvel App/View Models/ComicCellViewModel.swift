@@ -17,5 +17,8 @@ struct ComicCellViewModel {
     var variantDescription: String = ""
     var pageCount: Int = 0
     var price: Double = 0.0
+    var format: String = ""
+    var focDate: String = ""
+    var onSaleDate: String = ""
 
 }

@@ -15,14 +15,14 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIView.animate(withDuration: 2, delay: 0, options: .curveEaseIn) {
+            self.logo.alpha = 1
+            self.view.layoutIfNeeded()
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.performSegue(withIdentifier: Constants.homeSegue, sender: self)
         }
-    }
 
-    override func viewWillAppear(_ animated: Bool) {
-        logo.isHidden = false
     }
-
 }
 

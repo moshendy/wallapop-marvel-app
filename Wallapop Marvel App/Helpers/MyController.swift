@@ -291,6 +291,21 @@ class MyController {
         return today
     }
     
+    public static func convertISODate(dateString: String) -> String?{
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        if let date = dateFormatter.date(from:dateString){
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            formatter.locale = NSLocale(localeIdentifier: "en") as Locale?
+            let today = formatter.string(from: date)
+            return today
+        }else{
+            return nil
+        }
+        
+    }
 }
 
 

@@ -10,6 +10,8 @@ import ObjectMapper
 
 
 typealias Comics = [Comic]
+typealias ComicsDates = [ComicDate]
+typealias ComicsPrices = [ComicPrice]
 
 
 //MARK: - Comic Data Container Model
@@ -39,8 +41,10 @@ class Comic: Mappable{
     var variantDescription:String = ""
     var description: String = ""
     var pageCount: Int = 0
-    var prices: [ComicPrice]?
+    var prices: ComicsPrices?
+    var dates: ComicsDates?
     var thumbnail: Thumbnail?
+    var format: String = ""
 
     required init?(map: Map) {
     }
@@ -52,6 +56,8 @@ class Comic: Mappable{
         pageCount <- map["pageCount"]
         prices <- map["prices"]
         thumbnail <- map["thumbnail"]
+        format <- map["format"]
+        dates <- map["dates"]
     }
 }
 
@@ -87,4 +93,18 @@ class ComicPrice: Mappable{
 
 }
 
+//MARK: - Comic Dates Model
+//--------------------------------
+class ComicDate: Mappable{
+    
+    var type: String = ""
+    var date: String = ""
+    
+    required init?(map: Map){
+    }
+    func mapping(map: Map) {
+        type <- map["type"]
+        date <- map["date"]
+    }
+}
 
