@@ -67,12 +67,25 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
     }
     
+    
+    // MARK: - Init Comics View Model
     func initViewModel() {
         viewModel.getComics(offset:page)
         viewModel.reloadTableView = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
                 MyController.hideLoading(vc: self ?? HomeViewController(),timeSeconds: 0.5)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                if self?.viewModel.comicCellViewModels.count == 0{
+                    UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) {
+                        self?.noResultsLabel.alpha = 1
+                    }
+                }else{
+                    UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) {
+                        self?.noResultsLabel.alpha = 0
+                    }
+                }
             }
         }
         viewModel.reloadCollectionView = { [weak self] in
@@ -83,16 +96,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func setAnimationProperties(){
-        self.collectionviewContainer.velocity = 0.7
-        self.collectionviewContainer.duration = 1
-        self.collectionviewContainer.force = 1
-
-        self.tableviewContainer.force = 1
-        self.tableviewContainer.duration = 1
-        self.tableviewContainer.velocity = 0.7
-    }
-    
+    // MARK: - Open Search Container
     @IBAction func toggleSeachBarBox(_ sender: UIButton) {
         if searchHeightCons.constant == 0{
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
@@ -111,6 +115,27 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    @IBAction func searchBtnAction(_ sender: UIButton) {
+        searchAction(textfield: searchTextField)
+    }
+    func searchAction(textfield: UITextField){
+        self.view.endEditing(true)
+        if searchText != textfield.text ?? ""{
+            MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
+            searchText = textfield.text ?? ""
+            
+            if !MyController.isEmptyString(text: textfield.text ?? ""){
+                page = 0
+                viewModel.getComicsByTitle(offset: page, title: textfield.text!)
+            }else{
+                page = 0
+                viewModel.getComics(offset:page)
+            }
+        }
+
+    }
+
+    // MARK: - Toggle list/Grid Views
     @IBAction func toggleListGridView(_ sender: UIButton) {
         setAnimationProperties()
         if sender.tag == 1{
@@ -149,25 +174,17 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    @IBAction func searchBtnAction(_ sender: UIButton) {
-        searchAction(textfield: searchTextField)
-    }
-    func searchAction(textfield: UITextField){
-        self.view.endEditing(true)
-        if searchText != textfield.text ?? ""{
-            MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
-            searchText = textfield.text ?? ""
-            
-            if !MyController.isEmptyString(text: textfield.text ?? ""){
-                page = 0
-                viewModel.getComicsByTitle(offset: page, title: textfield.text!)
-            }else{
-                page = 0
-                viewModel.getComics(offset:page)
-            }
-        }
+    func setAnimationProperties(){
+        self.collectionviewContainer.velocity = 0.7
+        self.collectionviewContainer.duration = 1
+        self.collectionviewContainer.force = 1
 
+        self.tableviewContainer.force = 1
+        self.tableviewContainer.duration = 1
+        self.tableviewContainer.velocity = 0.7
     }
+
+    // MARK: - Load More Data
     func loadMore(){
         page = page + 25
         MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
@@ -178,6 +195,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: - Pass data to view comic controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.viewComicSegue{
             if let selectedCell = selectedCellIndex{

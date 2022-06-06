@@ -11,19 +11,16 @@ import XCTest
 class ComicsServiceTests: XCTestCase {
     
     var sutMock : MockComicServiceProtocol!
-    
-    var ComicVM : ComicsViewModel!
     var mockComicViewModel : MockComicViewModel!
 
     override func setUp() {
         sutMock = MockComicServiceProtocol()
-        ComicVM = ComicsViewModel()
         mockComicViewModel = MockComicViewModel()
     }
     
     override func tearDown() {
         sutMock = nil
-        ComicVM = nil
+        mockComicViewModel = nil
     }
     
     func testMockComicService_WhenResponseFail(){
@@ -42,10 +39,10 @@ class ComicsServiceTests: XCTestCase {
         sutMock.getComics(offset: 1){ success, model, container, message in
             if success, let comics = model, let container = container {
                 self.mockComicViewModel.fetchData(comics: comics, comicDC: container)
+                XCTAssertEqual(comics.count, 30, "Success: comics count")
             }
             XCTAssertTrue(success, "Success")
             XCTAssertEqual(message, "Success: 200", "Success: 200")
         }
     }
-    
 }

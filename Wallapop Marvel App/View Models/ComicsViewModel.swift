@@ -37,7 +37,7 @@ class ComicsViewModel: NSObject {
             if success, let comics = model, let container = container {
                 self.fetchData(comics: comics, comicDC: container)
             } else {
-                print(error!)
+                print("error fetching data! : \(error!)")
             }
         }
     }
@@ -51,7 +51,7 @@ class ComicsViewModel: NSObject {
             if success, let comics = model, let container = container {
                 self.fetchData(comics: comics, comicDC: container)
             } else {
-                print(error!)
+                print("error fetching data! : \(error!)")
             }
         }
     }

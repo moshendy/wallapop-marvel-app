@@ -50,6 +50,8 @@
 		64177504284AFB1D00495FC9 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64177503284AFB1D00495FC9 /* ComicViewController.swift */; };
 		6417750B284BF88D00495FC9 /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417750A284BF88D00495FC9 /* ComicCollectionViewCell.swift */; };
 		6417750D284BF97C00495FC9 /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6417750C284BF97C00495FC9 /* ComicCollectionViewCell.xib */; };
+		6435BB41284E30D9000FA935 /* MockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435BB40284E30D9000FA935 /* MockWebService.swift */; };
+		6435BB43284E3484000FA935 /* ComicsWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435BB42284E3484000FA935 /* ComicsWebServiceTests.swift */; };
 		64672F6D284D4AE20055D68A /* ViewComicViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F6C284D4AE20055D68A /* ViewComicViewControllerTests.swift */; };
 		64672F6F284D4E7E0055D68A /* SplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F6E284D4E7E0055D68A /* SplashViewControllerTests.swift */; };
 		64672F77284D58370055D68A /* Wallapop_Marvel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F76284D58370055D68A /* Wallapop_Marvel_AppUITests.swift */; };
@@ -123,6 +125,8 @@
 		64177503284AFB1D00495FC9 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		6417750A284BF88D00495FC9 /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
 		6417750C284BF97C00495FC9 /* ComicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCollectionViewCell.xib; sourceTree = "<group>"; };
+		6435BB40284E30D9000FA935 /* MockWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebService.swift; sourceTree = "<group>"; };
+		6435BB42284E3484000FA935 /* ComicsWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsWebServiceTests.swift; sourceTree = "<group>"; };
 		64672F6C284D4AE20055D68A /* ViewComicViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComicViewControllerTests.swift; sourceTree = "<group>"; };
 		64672F6E284D4E7E0055D68A /* SplashViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerTests.swift; sourceTree = "<group>"; };
 		64672F74284D58370055D68A /* Wallapop Marvel AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallapop Marvel AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,17 +173,20 @@
 		640DE0D9284D851C00B8AF4E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				64C60216284D1611005A1CDD /* MockComicServiceProtocol.swift */,
+				64C60214284D15B8005A1CDD /* ComicsServiceTests.swift */,
+				6435BB42284E3484000FA935 /* ComicsWebServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		640DE0DC284D91E200B8AF4E /* MockViewModel */ = {
+		640DE0DC284D91E200B8AF4E /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				64C60216284D1611005A1CDD /* MockComicServiceProtocol.swift */,
+				6435BB40284E30D9000FA935 /* MockWebService.swift */,
 				640DE0DD284D920B00B8AF4E /* MockComicViewModel.swift */,
 			);
-			path = MockViewModel;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		6417749C284A4BEE00495FC9 = {
@@ -346,10 +353,9 @@
 		64FAEBB1284C185A00C7EE74 /* Wallapop Marvel AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				64C60214284D15B8005A1CDD /* ComicsServiceTests.swift */,
 				64C6021E284D4A7A005A1CDD /* View Controllers */,
 				640DE0D9284D851C00B8AF4E /* Services */,
-				640DE0DC284D91E200B8AF4E /* MockViewModel */,
+				640DE0DC284D91E200B8AF4E /* Mocks */,
 			);
 			path = "Wallapop Marvel AppTests";
 			sourceTree = "<group>";
@@ -647,10 +653,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C60215284D15B8005A1CDD /* ComicsServiceTests.swift in Sources */,
+				6435BB41284E30D9000FA935 /* MockWebService.swift in Sources */,
 				64672F6F284D4E7E0055D68A /* SplashViewControllerTests.swift in Sources */,
 				64672F6D284D4AE20055D68A /* ViewComicViewControllerTests.swift in Sources */,
 				64C6021D284D43D1005A1CDD /* ComicViewControllerTests.swift in Sources */,
 				640DE0DE284D920B00B8AF4E /* MockComicViewModel.swift in Sources */,
+				6435BB43284E3484000FA935 /* ComicsWebServiceTests.swift in Sources */,
 				64C60217284D1611005A1CDD /* MockComicServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

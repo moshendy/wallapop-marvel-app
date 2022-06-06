@@ -26,7 +26,7 @@ class MockComicServiceProtocol: ComicsServiceProtocol {
                       completion(false, nil,nil, "Success: 200")
                   }
             }else{
-                print("here")
+                print("Error Can not get JSON File")
             }
         }else if offset == 2{
             completion(false, nil, nil, "Error: Api Failure")
@@ -49,7 +49,7 @@ class MockComicServiceProtocol: ComicsServiceProtocol {
                       completion(false, nil,nil, "Success: 200")
                   }
             }else{
-                print("here")
+                print("Error Can not get JSON File")
             }
         }else if offset == 2{
             completion(false, nil, nil, "Error: Api Failure")

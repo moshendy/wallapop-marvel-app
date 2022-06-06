@@ -17,14 +17,14 @@ class MockComicViewModel{
     func fetchData(comics: Comics, comicDC: ComicDataContainer) {
         self.comics = comics
         var vms = [ComicCellViewModel]()
-        //we’re looping through the items list, and we create a new list of the cell’s view model using the createCellModel method
+        NSLog("herereererer \(comics.count)", "herereererer")
+
         for comic in comics {
             vms.append(createCellModel(comic: comic))
         }
         comicCellViewModels = comicCellViewModels + vms
         self.comicDC = [comicDC]
     }
-    
     func createCellModel(comic: Comic) -> ComicCellViewModel {
         let id = comic.id
         let title = comic.title
@@ -40,7 +40,6 @@ class MockComicViewModel{
 
         return ComicCellViewModel(id: id, title: title, image: image, imageExt: imageExt, description: description, variantDescription: variantDescription, pageCount: pageCount, price: price ?? 0, format: format, focDate: focDate ?? "", onSaleDate: onSaleDate ?? "")
     }
-    //return the cell view model for the current IndexPath
     func getCellViewModel(at indexPath: IndexPath) -> ComicCellViewModel {
         return comicCellViewModels[indexPath.row]
     }
