@@ -9,6 +9,7 @@ import UIKit
 
 class ComicViewController: UIViewController {
 
+    //MARK: - @IBOutlets
     @IBOutlet weak var scrollViewMainWidth: NSLayoutConstraint!
     @IBOutlet weak var comicDescriptionLabel: UILabel!
     @IBOutlet weak var comicLabel: UILabel!
@@ -18,25 +19,28 @@ class ComicViewController: UIViewController {
     @IBOutlet weak var focDateLabel: UILabel!
     @IBOutlet weak var publishedDateLabel: UILabel!
 
-    var format = ""
-    var focDate = ""
-    var onSaleDate = ""
+    //MARK: - Global Variables
 
-    var comicTitle = ""
-    var comicDescription = ""
-    var pageCount = 0
-    var price = 0.0
+    var format = "Comic"
+    var focDate = "1-6-2022"
+    var onSaleDate = "1-6-2022"
+
+    var comicTitle = "Avengers"
+    var comicDescription = "Hello There"
+    var price = 2.99
 
     var imageui : UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    
+    //MARK: - Set Comic Data to View before the view appears
     override func viewWillAppear(_ animated: Bool) {
         
         comicLabel.text = comicTitle
-        priceLabel.text = "Price: \(price)"
+        priceLabel.text = "Price: $\(price) "
         formatLabel.text = "Format: \(format)"
         comicDescriptionLabel.text = comicDescription.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
 
@@ -54,12 +58,8 @@ class ComicViewController: UIViewController {
 
         comicImage.image = imageui
 
-
-    }
-    
-    override func viewWillLayoutSubviews() {
         scrollViewMainWidth.constant = UIScreen.main.bounds.width
+        self.view.layoutIfNeeded()
+
     }
-
-
 }

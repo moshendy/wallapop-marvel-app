@@ -9,15 +9,16 @@ import UIKit
 
 class ComicCollectionViewCell: UICollectionViewCell {
     
+    //MARK: - @IBOutlets
     @IBOutlet weak var mainVIew: UIView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cellImage: UIImageView!
 
-    
+    //MARK: - Global Variables
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
 
-    
+    //Cell Init
     var cellViewModel: ComicCellViewModel? {
         didSet {
             

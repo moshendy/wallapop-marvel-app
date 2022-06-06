@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppSnapShotsTests : NSObject
+@end
+@implementation PodsDummy_Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppSnapShotsTests
+@end

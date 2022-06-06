@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//MARK: - Comic TableView / CollectionView View Model
 struct ComicCellViewModel {
     var id: Int = 0
     var title: String = ""

@@ -10,6 +10,7 @@ import Spring
 
 class SplashViewController: UIViewController {
 
+    //MARK: - @IBOutlets
     @IBOutlet weak var logo: SpringImageView!
     
     override func viewDidLoad() {

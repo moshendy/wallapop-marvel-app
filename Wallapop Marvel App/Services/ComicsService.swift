@@ -11,12 +11,14 @@ import SwiftyJSON
 import ObjectMapper
 
 
+//MARK: - Comics Web Service Protocol
 protocol ComicsServiceProtocol {
     func getComics(offset: Int,completion: @escaping (_ success: Bool, _ results: Comics?, _ mainContainer: ComicDataContainer?, _ error: String?) -> ())
     func getComicsByTitle(offset: Int,title: String,completion: @escaping (_ success: Bool, _ results: Comics?, _ mainContainer: ComicDataContainer?, _ error: String?) -> ())
 
 }
 
+//MARK: - Comics Web Service Protocol Implmentation
 class ComicsService: ComicsServiceProtocol {
     
     func getComics(offset: Int,completion: @escaping (Bool, Comics?,ComicDataContainer?, String?) -> ()) {

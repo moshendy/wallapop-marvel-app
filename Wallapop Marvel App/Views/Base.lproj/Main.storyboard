@@ -315,7 +315,7 @@
                         <outlet property="noResultsLabel" destination="xuS-mT-bnZ" id="jx8-Sd-UXW"/>
                         <outlet property="openSearchBtn" destination="Xbw-uw-DiH" id="OG0-2v-VV3"/>
                         <outlet property="searchHeightCons" destination="Z0H-oB-rPD" id="Ibg-Kk-NeA"/>
-                        <outlet property="searchTextField" destination="wQR-Mr-PN6" id="zOI-3s-9ud"/>
+                        <outlet property="searchTextField" destination="wQR-Mr-PN6" id="HqZ-u7-gXT"/>
                         <outlet property="tableView" destination="Qts-DN-mG0" id="Iav-jg-dsR"/>
                         <outlet property="tableviewContainer" destination="JnG-Ey-MBy" id="pyK-Qq-jhB"/>
                         <segue destination="98G-QL-sX7" kind="show" identifier="viewComicSegue" id="6TT-JX-bWP"/>

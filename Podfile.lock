@@ -4,6 +4,7 @@ PODS:
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
+  - SnapshotTesting (1.8.2)
   - Spring (1.0.6)
   - SwiftyJSON (5.0.1)
 
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - ObjectMapper
   - SDWebImage (~> 5.0)
+  - SnapshotTesting (~> 1.8.1)
   - Spring (from `https://github.com/MengTo/Spring.git`)
   - SwiftyJSON
 
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - ObjectMapper
     - SDWebImage
+    - SnapshotTesting
     - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -34,9 +37,10 @@ SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
   Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: f06d98d01c744c537abb945bfa29e3717026e410
+PODFILE CHECKSUM: 8acc9268713c6bba5b79e42768c1d7c26f90fcf3
 
 COCOAPODS: 1.11.2

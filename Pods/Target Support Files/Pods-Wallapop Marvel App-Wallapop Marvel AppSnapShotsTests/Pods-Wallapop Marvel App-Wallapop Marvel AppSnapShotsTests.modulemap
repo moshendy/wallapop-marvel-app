@@ -1,0 +1,6 @@
+framework module Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppSnapShotsTests {
+  umbrella header "Pods-Wallapop Marvel App-Wallapop Marvel AppSnapShotsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

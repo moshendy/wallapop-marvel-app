@@ -9,7 +9,10 @@ import UIKit
 import Spring
 
 class HomeViewController: UIViewController {
-    
+
+
+
+    //MARK: - @IBOutlets
     @IBOutlet weak var openSearchBtn: UIButton!
     @IBOutlet weak var listBtn: UIButton!
     @IBOutlet weak var gridBtn: UIButton!
@@ -20,7 +23,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchHeightCons: NSLayoutConstraint!
     @IBOutlet var tableView: UITableView!
-    
+
+
+    //MARK: - Global Variables
     var page = 0
     var searchText = ""
     var selectedCellIndex : IndexPath?
@@ -203,7 +208,6 @@ class HomeViewController: UIViewController {
                 let destinationViewController = segue.destination as! ComicViewController
                 destinationViewController.comicTitle = cellVM.title
                 destinationViewController.comicDescription = cellVM.description
-                destinationViewController.pageCount = cellVM.pageCount
                 destinationViewController.price = cellVM.price
                 destinationViewController.format = cellVM.format
                 destinationViewController.focDate = cellVM.focDate

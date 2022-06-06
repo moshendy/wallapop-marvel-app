@@ -18,5 +18,11 @@ pod 'ObjectMapper'
     pod 'SwiftyJSON'
     pod 'ObjectMapper'
   end
+  
+  target 'Wallapop Marvel AppSnapShotsTests' do
+    pod 'SnapshotTesting', '~> 1.8.1'
+  end
 
+  
+  
 end
