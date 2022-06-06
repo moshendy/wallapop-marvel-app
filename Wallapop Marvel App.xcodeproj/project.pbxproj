@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640DE0DA284D8F1E00B8AF4E /* comicsExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 64C6021A284D2343005A1CDD /* comicsExample.json */; };
+		640DE0DB284D8F1F00B8AF4E /* comicsExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 64C6021A284D2343005A1CDD /* comicsExample.json */; };
+		640DE0DE284D920B00B8AF4E /* MockComicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640DE0DD284D920B00B8AF4E /* MockComicViewModel.swift */; };
 		641774A9284A4BEE00495FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641774A8284A4BEE00495FC9 /* AppDelegate.swift */; };
 		641774AB284A4BEE00495FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641774AA284A4BEE00495FC9 /* SceneDelegate.swift */; };
 		641774AD284A4BEE00495FC9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641774AC284A4BEE00495FC9 /* SplashViewController.swift */; };
@@ -47,10 +50,25 @@
 		64177504284AFB1D00495FC9 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64177503284AFB1D00495FC9 /* ComicViewController.swift */; };
 		6417750B284BF88D00495FC9 /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417750A284BF88D00495FC9 /* ComicCollectionViewCell.swift */; };
 		6417750D284BF97C00495FC9 /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6417750C284BF97C00495FC9 /* ComicCollectionViewCell.xib */; };
+		64672F6D284D4AE20055D68A /* ViewComicViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F6C284D4AE20055D68A /* ViewComicViewControllerTests.swift */; };
+		64672F6F284D4E7E0055D68A /* SplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F6E284D4E7E0055D68A /* SplashViewControllerTests.swift */; };
+		64672F77284D58370055D68A /* Wallapop_Marvel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672F76284D58370055D68A /* Wallapop_Marvel_AppUITests.swift */; };
+		64C60215284D15B8005A1CDD /* ComicsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C60214284D15B8005A1CDD /* ComicsServiceTests.swift */; };
+		64C60217284D1611005A1CDD /* MockComicServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C60216284D1611005A1CDD /* MockComicServiceProtocol.swift */; };
+		64C6021B284D2343005A1CDD /* comicsExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 64C6021A284D2343005A1CDD /* comicsExample.json */; };
+		64C6021D284D43D1005A1CDD /* ComicViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6021C284D43D1005A1CDD /* ComicViewControllerTests.swift */; };
+		969FE5B870E7C94CBFDAAED7 /* Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149E4E050F84AA2A70BA3025 /* Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework */; };
 		C48BB53CA3E3A40168ACE7D1 /* Pods_Wallapop_Marvel_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920626DED91F9C3FEE23426A /* Pods_Wallapop_Marvel_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		64672F7A284D58370055D68A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6417749D284A4BEE00495FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 641774A4284A4BEE00495FC9;
+			remoteInfo = "Wallapop Marvel App";
+		};
 		64FAEBB4284C185A00C7EE74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6417749D284A4BEE00495FC9 /* Project object */;
@@ -61,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		149E4E050F84AA2A70BA3025 /* Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640DE0DD284D920B00B8AF4E /* MockComicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockComicViewModel.swift; sourceTree = "<group>"; };
 		641774A5284A4BEE00495FC9 /* Wallapop Marvel App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallapop Marvel App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		641774A8284A4BEE00495FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		641774AA284A4BEE00495FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,9 +123,19 @@
 		64177503284AFB1D00495FC9 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		6417750A284BF88D00495FC9 /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
 		6417750C284BF97C00495FC9 /* ComicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCollectionViewCell.xib; sourceTree = "<group>"; };
+		64672F6C284D4AE20055D68A /* ViewComicViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComicViewControllerTests.swift; sourceTree = "<group>"; };
+		64672F6E284D4E7E0055D68A /* SplashViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerTests.swift; sourceTree = "<group>"; };
+		64672F74284D58370055D68A /* Wallapop Marvel AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallapop Marvel AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64672F76284D58370055D68A /* Wallapop_Marvel_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallapop_Marvel_AppUITests.swift; sourceTree = "<group>"; };
+		64C60214284D15B8005A1CDD /* ComicsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceTests.swift; sourceTree = "<group>"; };
+		64C60216284D1611005A1CDD /* MockComicServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockComicServiceProtocol.swift; sourceTree = "<group>"; };
+		64C6021A284D2343005A1CDD /* comicsExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comicsExample.json; sourceTree = "<group>"; };
+		64C6021C284D43D1005A1CDD /* ComicViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewControllerTests.swift; sourceTree = "<group>"; };
 		64FAEBB0284C185A00C7EE74 /* Wallapop Marvel AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallapop Marvel AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773C39D8A633EA8B18FD5992 /* Pods-Wallapop Marvel App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App.debug.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App/Pods-Wallapop Marvel App.debug.xcconfig"; sourceTree = "<group>"; };
 		920626DED91F9C3FEE23426A /* Pods_Wallapop_Marvel_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallapop_Marvel_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCE534C781E87B7D8AEDAF8 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA761843CCC3A60878FCEE8F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F33963F7829562CC90060376 /* Pods-Wallapop Marvel App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallapop Marvel App.release.xcconfig"; path = "Target Support Files/Pods-Wallapop Marvel App/Pods-Wallapop Marvel App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,21 +148,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64FAEBAD284C185A00C7EE74 /* Frameworks */ = {
+		64672F71284D58370055D68A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64FAEBAD284C185A00C7EE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969FE5B870E7C94CBFDAAED7 /* Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640DE0D9284D851C00B8AF4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64C60216284D1611005A1CDD /* MockComicServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		640DE0DC284D91E200B8AF4E /* MockViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				640DE0DD284D920B00B8AF4E /* MockComicViewModel.swift */,
+			);
+			path = MockViewModel;
+			sourceTree = "<group>";
+		};
 		6417749C284A4BEE00495FC9 = {
 			isa = PBXGroup;
 			children = (
 				641774A7284A4BEE00495FC9 /* Wallapop Marvel App */,
 				64FAEBB1284C185A00C7EE74 /* Wallapop Marvel AppTests */,
+				64672F75284D58370055D68A /* Wallapop Marvel AppUITests */,
 				641774A6284A4BEE00495FC9 /* Products */,
 				C6C0C05D4859C06099FA73F2 /* Pods */,
 				8AC162E4F234818D8C91CFA0 /* Frameworks */,
@@ -144,6 +199,7 @@
 			children = (
 				641774A5284A4BEE00495FC9 /* Wallapop Marvel App.app */,
 				64FAEBB0284C185A00C7EE74 /* Wallapop Marvel AppTests.xctest */,
+				64672F74284D58370055D68A /* Wallapop Marvel AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +216,7 @@
 				641774BF284A4D2100495FC9 /* Views */,
 				641774C5284A509E00495FC9 /* Fonts */,
 				641774B1284A4BEF00495FC9 /* Assets.xcassets */,
+				64C6021A284D2343005A1CDD /* comicsExample.json */,
 				641774B6284A4BEF00495FC9 /* Info.plist */,
 			);
 			path = "Wallapop Marvel App";
@@ -268,9 +325,31 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		64672F75284D58370055D68A /* Wallapop Marvel AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64672F76284D58370055D68A /* Wallapop_Marvel_AppUITests.swift */,
+			);
+			path = "Wallapop Marvel AppUITests";
+			sourceTree = "<group>";
+		};
+		64C6021E284D4A7A005A1CDD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64672F6E284D4E7E0055D68A /* SplashViewControllerTests.swift */,
+				64C6021C284D43D1005A1CDD /* ComicViewControllerTests.swift */,
+				64672F6C284D4AE20055D68A /* ViewComicViewControllerTests.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		64FAEBB1284C185A00C7EE74 /* Wallapop Marvel AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				64C60214284D15B8005A1CDD /* ComicsServiceTests.swift */,
+				64C6021E284D4A7A005A1CDD /* View Controllers */,
+				640DE0D9284D851C00B8AF4E /* Services */,
+				640DE0DC284D91E200B8AF4E /* MockViewModel */,
 			);
 			path = "Wallapop Marvel AppTests";
 			sourceTree = "<group>";
@@ -279,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				920626DED91F9C3FEE23426A /* Pods_Wallapop_Marvel_App.framework */,
+				149E4E050F84AA2A70BA3025 /* Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -288,6 +368,8 @@
 			children = (
 				773C39D8A633EA8B18FD5992 /* Pods-Wallapop Marvel App.debug.xcconfig */,
 				F33963F7829562CC90060376 /* Pods-Wallapop Marvel App.release.xcconfig */,
+				EA761843CCC3A60878FCEE8F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */,
+				DBCE534C781E87B7D8AEDAF8 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -314,13 +396,33 @@
 			productReference = 641774A5284A4BEE00495FC9 /* Wallapop Marvel App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		64672F73284D58370055D68A /* Wallapop Marvel AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64672F7C284D58370055D68A /* Build configuration list for PBXNativeTarget "Wallapop Marvel AppUITests" */;
+			buildPhases = (
+				64672F70284D58370055D68A /* Sources */,
+				64672F71284D58370055D68A /* Frameworks */,
+				64672F72284D58370055D68A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64672F7B284D58370055D68A /* PBXTargetDependency */,
+			);
+			name = "Wallapop Marvel AppUITests";
+			productName = "Wallapop Marvel AppUITests";
+			productReference = 64672F74284D58370055D68A /* Wallapop Marvel AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		64FAEBAF284C185A00C7EE74 /* Wallapop Marvel AppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64FAEBB8284C185A00C7EE74 /* Build configuration list for PBXNativeTarget "Wallapop Marvel AppTests" */;
 			buildPhases = (
+				8514B21DC1BAC10C70AB7311 /* [CP] Check Pods Manifest.lock */,
 				64FAEBAC284C185A00C7EE74 /* Sources */,
 				64FAEBAD284C185A00C7EE74 /* Frameworks */,
 				64FAEBAE284C185A00C7EE74 /* Resources */,
+				D916C80D932EDC6AB6D9D087 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +447,10 @@
 					641774A4284A4BEE00495FC9 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					64672F73284D58370055D68A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 641774A4284A4BEE00495FC9;
+					};
 					64FAEBAF284C185A00C7EE74 = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
@@ -367,6 +473,7 @@
 			targets = (
 				641774A4284A4BEE00495FC9 /* Wallapop Marvel App */,
 				64FAEBAF284C185A00C7EE74 /* Wallapop Marvel AppTests */,
+				64672F73284D58370055D68A /* Wallapop Marvel AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,6 +498,7 @@
 				641774E1284A509E00495FC9 /* Poppins-ExtraBold.ttf in Resources */,
 				641774E5284A509E00495FC9 /* Poppins-LightItalic.ttf in Resources */,
 				641774B5284A4BEF00495FC9 /* LaunchScreen.storyboard in Resources */,
+				640DE0DA284D8F1E00B8AF4E /* comicsExample.json in Resources */,
 				641774DF284A509E00495FC9 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				641774E4284A509E00495FC9 /* Poppins-Regular.ttf in Resources */,
 				641774E0284A509E00495FC9 /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -403,10 +511,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64672F72284D58370055D68A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640DE0DB284D8F1F00B8AF4E /* comicsExample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64FAEBAE284C185A00C7EE74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C6021B284D2343005A1CDD /* comicsExample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +547,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wallapop Marvel App/Pods-Wallapop Marvel App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8514B21DC1BAC10C70AB7311 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A38638719AA86C6354268FDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +589,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D916C80D932EDC6AB6D9D087 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -478,16 +634,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64672F70284D58370055D68A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64672F77284D58370055D68A /* Wallapop_Marvel_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64FAEBAC284C185A00C7EE74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C60215284D15B8005A1CDD /* ComicsServiceTests.swift in Sources */,
+				64672F6F284D4E7E0055D68A /* SplashViewControllerTests.swift in Sources */,
+				64672F6D284D4AE20055D68A /* ViewComicViewControllerTests.swift in Sources */,
+				64C6021D284D43D1005A1CDD /* ComicViewControllerTests.swift in Sources */,
+				640DE0DE284D920B00B8AF4E /* MockComicViewModel.swift in Sources */,
+				64C60217284D1611005A1CDD /* MockComicServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		64672F7B284D58370055D68A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 641774A4284A4BEE00495FC9 /* Wallapop Marvel App */;
+			targetProxy = 64672F7A284D58370055D68A /* PBXContainerItemProxy */;
+		};
 		64FAEBB5284C185A00C7EE74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 641774A4284A4BEE00495FC9 /* Wallapop Marvel App */;
@@ -691,8 +866,45 @@
 			};
 			name = Release;
 		};
+		64672F7D284D58370055D68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB6R56A4H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mshendy.Wallapop-Marvel-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wallapop Marvel App";
+			};
+			name = Debug;
+		};
+		64672F7E284D58370055D68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB6R56A4H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mshendy.Wallapop-Marvel-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wallapop Marvel App";
+			};
+			name = Release;
+		};
 		64FAEBB6284C185A00C7EE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA761843CCC3A60878FCEE8F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -718,6 +930,7 @@
 		};
 		64FAEBB7284C185A00C7EE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCE534C781E87B7D8AEDAF8 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -757,6 +970,15 @@
 			buildConfigurations = (
 				641774BA284A4BEF00495FC9 /* Debug */,
 				641774BB284A4BEF00495FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64672F7C284D58370055D68A /* Build configuration list for PBXNativeTarget "Wallapop Marvel AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64672F7D284D58370055D68A /* Debug */,
+				64672F7E284D58370055D68A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

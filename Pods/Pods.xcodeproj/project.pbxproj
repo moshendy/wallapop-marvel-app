@@ -143,16 +143,18 @@
 		84DEC0EEF97279D6E82D7E70951D7746 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B371AF2BC518A7B1167033EA0EF6239 /* SpringImageView.swift */; };
 		8546BEE99CBB27FFE2BFA224C790BFD6 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6754291C49633508F61CA22C46BD6A27 /* SpringLabel.swift */; };
 		854D7A4A2872566E4D06870518053225 /* SDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFD8A0F29980EA38FA35847C4BEC8 /* SDImageAPNGCoder.m */; };
+		8762B8E285BC9B845FAE40F1DAA7D29B /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3526F6338E1713440E2A45879B25895D /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8821E3636BB86560FC2F2D2CFF545F16 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B349F93EEE92BFC58716BD1A0F7822E3 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		888BEE4C3B238AC407C59D2194939AB9 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BE72F8C45E8E57450FF22D163A4255 /* SDImageCacheConfig.m */; };
 		8AE1E5F94981C64208CCA0DAF972ADD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B221330371A113A8A4A03F21DD5B96 /* Images.xcassets */; };
+		8B2A85F3B4553B9ED6CAE0701173515A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87079E483F59AB0817E19A156766B320 /* Foundation.framework */; };
 		8C5D0B2A7B52DF68D03820244993E91B /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2332A7347E0374A4AB4AFFA58B3BDD /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C9D609988FE2993BB116B4B00FAC57B /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5750A097E3EA63353A1EF3579F958065 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11BBB734663A47DE756307D69C9EB4 /* URLConvertible+URLRequestConvertible.swift */; };
 		8F88549F032EFFEA9C281860520CC879 /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED941A9E70F682F6FAB88BCAECD34B4 /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9010507E55B501BE4E07CAD4DADC5DEB /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16A0F7F91B613C63FBA99736765A06 /* BlurView.swift */; };
 		909CBA577868D6E976AC82340B50343E /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C60EDA3BCB0AC8BC04A5FF50DDEDBA59 /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91A16BF6E1F2C385F376A5323F00B3E8 /* Pods-Wallapop Marvel App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAEA0151EA0277EC0674F8445DB37EE /* Pods-Wallapop Marvel App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A16BF6E1F2C385F376A5323F00B3E8 /* Pods-Wallapop Marvel App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F09103413B321D68628C4093FD38B1B /* Pods-Wallapop Marvel App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9374C23021FD1266659BDA9EB4BB41FC /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DBA31C97574269E30E746262ECFD5 /* FromJSON.swift */; };
 		96017BC929FFDBD22711B1022DE4CE2D /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41592F0020B2A69876AEBF1C6867EB31 /* ISO8601DateTransform.swift */; };
 		96479C9C76FDC513C03ADD58168F6911 /* SDImageIOAnimatedCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A358B5E64F8EC2EE86C9FE991A297C /* SDImageIOAnimatedCoder.m */; };
@@ -189,7 +191,7 @@
 		B449DA71AEEF878482A26399CA9568D3 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2F8607705C15DA8BB30F4B24D8C7EA /* CodableTransform.swift */; };
 		B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465BAF3CF2D76C7D04FD3F547CC7FB1 /* ServerTrustEvaluation.swift */; };
 		B88C351562CE8FA4255EA9023213BE4E /* SDGraphicsImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5672E797D967B6D85776620BB236E8F1 /* SDGraphicsImageRenderer.m */; };
-		B8C43470FD61B94846E45879DF683532 /* Pods-Wallapop Marvel App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E20D12E3D8BACCD88423A48B0ADCF21 /* Pods-Wallapop Marvel App-dummy.m */; };
+		B8C43470FD61B94846E45879DF683532 /* Pods-Wallapop Marvel App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F18A35A0396959CA704D1FEECD5496 /* Pods-Wallapop Marvel App-dummy.m */; };
 		BC0ECA8F22DEDE8886E189CD0EAA1197 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E08ABFB51803B5F58568BA33BE3D3E7 /* URLRequest+Alamofire.swift */; };
 		BCB7B61DB37BA3EDB8CBBF258DC66446 /* UIImage+ExtendedCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = B709A46BDEE901A43E75F339B0882934 /* UIImage+ExtendedCacheData.m */; };
 		BD074722CD72470954ADB5B1198E01C5 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = EB919329F1CB88C41EF8C6584E2BF43B /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -248,6 +250,7 @@
 		F0E28CEF30861F3589A4A662CEA76D80 /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1A15A107E64C5C28063BA4F081CC43 /* SDImageGraphics.m */; };
 		F161112B04B9AC7D276D9F588BA6E313 /* SDDeviceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7882204C4E204A42AE927FC0A5ABDBB6 /* SDDeviceHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6032FC9CB0F7B5AF6FCA0CABD8A997D /* Alamofire.swift */; };
+		F2CFDE0F42E637F6127F7D32BC5C228D /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9153AB059482668FC7D34B90361C32 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m */; };
 		F463DEB020D5C466D4613947AE4BE16F /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CDC864FA00D755DDAC74BD12E7F38B /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4811CFAC05932CE436CC2C32BAD91E6 /* UIColor+SDHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEA4038BE7F1436DC038450293F0A0F /* UIColor+SDHexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F497CD01EF6568475FD363A248D78A4B /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA61E541EDF4C292980310DB928DC25F /* UIImage+ForceDecode.m */; };
@@ -262,6 +265,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		20C37B31BBED9046B37FEEDBA8A88991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		2D3F1EE6D2A91C6F22428D63C5E7C8F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
+		4885EE71B6440B915C7AA580837316B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		55A7580C2BF0B81719A85EF35B8D744E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
 		6037ABED12C6677C53F62A198F74FE0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -290,6 +321,13 @@
 			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
 			remoteInfo = ObjectMapper;
 		};
+		E635DD409001607C53512DA2B8E63E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A062DD8462AB228A88272FF6B09535E9;
+			remoteInfo = Spring;
+		};
 		E84C62194C99277B7D615110757C3457 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -303,6 +341,7 @@
 		029B3C1C41267C815826A8E0C91C2577 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/Core/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		02A90918677F7D1396ED92D0E3E5F82A /* SDDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDisplayLink.m; path = SDWebImage/Private/SDDisplayLink.m; sourceTree = "<group>"; };
 		02D135450EF2C3D067D315AE55B9C8B6 /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
+		03FC356D589DADD3F58B3AD63C80FADF /* Pods-Wallapop Marvel App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallapop Marvel App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0465BAF3CF2D76C7D04FD3F547CC7FB1 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		046C5FE784FBFBB01E8BE2ACBFE5187A /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		07BCD8FC29EDF31E626D641BAF2CBC27 /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
@@ -313,9 +352,12 @@
 		09E967C46EF8C6931B27A650A425E80A /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
 		0A9B9B9F8B565766616A7C8EA7478961 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
 		0B73C1F1D09DC22016B04A234A8E8260 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		0B9153AB059482668FC7D34B90361C32 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m"; sourceTree = "<group>"; };
 		0BE1351E703BB487463CA66C834D8163 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
 		0D95E5373A236D2CE2D90CFBC37E4EBF /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		0DC4AB8A2B7520E2E4EB896A91F6F7C8 /* Pods-Wallapop Marvel App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App.debug.xcconfig"; sourceTree = "<group>"; };
 		0E1A2DE24CBB1422B7D5CD2C97ED8200 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		0F09103413B321D68628C4093FD38B1B /* Pods-Wallapop Marvel App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallapop Marvel App-umbrella.h"; sourceTree = "<group>"; };
 		10BC1411B395F0B4DD2DDEE5F8AB26E5 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		116D206DF8EAF5D946EB396C951481CD /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/Core/SDImageCache.m; sourceTree = "<group>"; };
 		11D01A9C36308375EE26A04905C6E46A /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/Core/SDImageCoderHelper.h; sourceTree = "<group>"; };
@@ -340,6 +382,7 @@
 		1ED941A9E70F682F6FAB88BCAECD34B4 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
 		1F77D598A4AF9089740C74726E538952 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
 		1FEAC26BAD56B314880524D4AFEB9B1C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		2208BBD11C72A253A97938B23EE9BB61 /* Pods-Wallapop Marvel App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-acknowledgements.plist"; sourceTree = "<group>"; };
 		223F4F1085DE72F1FEB55F780CB36D8D /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
 		228FD75DD50CFF23E9826BF526FFB32D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		230DBA31C97574269E30E746262ECFD5 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
@@ -351,14 +394,18 @@
 		2707BE48D701C037782B118F27EDECDE /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		272770B4EF746EEEDBCDAD05BFAFF50D /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		27CDC864FA00D755DDAC74BD12E7F38B /* SDAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageView.h; path = SDWebImage/Core/SDAnimatedImageView.h; sourceTree = "<group>"; };
+		2871B63F24B31F4C87BE57597933C803 /* Pods-Wallapop Marvel App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App.release.xcconfig"; sourceTree = "<group>"; };
 		2C063C356F96284878FB6967908ADA34 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
 		2C2F991E17EEED7A40DDCB728B67CFD1 /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/Core/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		2DB10DC208CEC6F8B437F2B120B3D968 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
+		2DCFDB61460C8F1D24DC03BA6731ABDC /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests.modulemap"; sourceTree = "<group>"; };
 		2EB1DF6A309A941F40CABA645FEC5DB7 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
 		307803B0DB4132615AB45A511B0109E5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		31BACB3B6F7C729F0A6745C7166C6B2A /* SDFileAttributeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDFileAttributeHelper.h; path = SDWebImage/Private/SDFileAttributeHelper.h; sourceTree = "<group>"; };
+		326685BABDC5BBDCA341737C914357A1 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3409258A6AD8B10401D443416525CEEE /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		34E62BB9276C63F66FEB043412B9A73C /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		3526F6338E1713440E2A45879B25895D /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h"; sourceTree = "<group>"; };
 		367B5884AC8CEBD2E83660912EBF8821 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/Core/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		3867CF832D00DC0A5B13DBF90D362DB0 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		39090992A96D9D70B3FBB1A78CA9A424 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
@@ -366,20 +413,18 @@
 		3B371AF2BC518A7B1167033EA0EF6239 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
 		3BE5FF47A9F8657B67530982F9474DD0 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
 		3C046DFB44D4EA68F8F3C215F2EF5436 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
-		3C6A7363E276AFB2C93BE2FFF7B62B9B /* Pods-Wallapop Marvel App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallapop Marvel App-frameworks.sh"; sourceTree = "<group>"; };
 		3DB30B43C42FD293F960F5035D2BD7DD /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		3E5058D5E48C13993A7B0F3DEDE7340F /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		3EEA4038BE7F1436DC038450293F0A0F /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		3F136A20734AD27CC397572C4E62ADCE /* Spring */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spring; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4101EBE98AC8277AECC67FFBBD559B7D /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		4149A44603EDBE14FB6FB4061E27F669 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		41555EBF3137740EAB94E9A6263F185E /* Pods-Wallapop Marvel App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-acknowledgements.plist"; sourceTree = "<group>"; };
 		41592F0020B2A69876AEBF1C6867EB31 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		4217B3FB0E5703AE20EAF99875EA0752 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		429306177BEC37034484187F3D927B9F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		430C341B7FA6E100B8AF6786F5F03555 /* SDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAssociatedObject.m; path = SDWebImage/Private/SDAssociatedObject.m; sourceTree = "<group>"; };
 		44F04A95FBD7F51EDAD6CC1F37AD88FE /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
 		44F459D4E628976EAB0E712333E62A4C /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		460272937C1D23AEA065D3B2D9C593AC /* Pods-Wallapop Marvel App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-Info.plist"; sourceTree = "<group>"; };
 		48A2672FD000080FFC8934A904E14A47 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
 		49D9C7D5A4C12F171A4B94DA81F31EC9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/Core/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		49F47E5EBFC11C51B9E67BC3BE352CC0 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
@@ -392,18 +437,20 @@
 		53DFF8C401D269ECD45F21A7B5DBCD32 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		5471B07D9879D1187DA1CCD62AF1C24C /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
 		5506C0DA501915C16874147C7C3A767E /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
-		55142E1E278C010C4300230CCAE92352 /* Pods-Wallapop Marvel App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App.release.xcconfig"; sourceTree = "<group>"; };
 		55BB859B1876733069870B71784EDE06 /* NSBezierPath+SDRoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+SDRoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.h"; sourceTree = "<group>"; };
 		5672E797D967B6D85776620BB236E8F1 /* SDGraphicsImageRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDGraphicsImageRenderer.m; path = SDWebImage/Core/SDGraphicsImageRenderer.m; sourceTree = "<group>"; };
 		56E6111DC956770E82BD419BBBFF3997 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
 		5750A097E3EA63353A1EF3579F958065 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		578B55F5F1E38E9D130CA6B24BBFDDDB /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
 		5795680A5EB3BF6107A36BB921EF6C60 /* SDImageHEICCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageHEICCoder.m; path = SDWebImage/Core/SDImageHEICCoder.m; sourceTree = "<group>"; };
+		57C2EC68D89F768BD97FA78600371981 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-Info.plist"; sourceTree = "<group>"; };
+		5813459A3A486A0D6969798422E1F655 /* Pods-Wallapop Marvel App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallapop Marvel App-frameworks.sh"; sourceTree = "<group>"; };
 		5824CD79059E2130B91D7BE8F7FD7057 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
 		58D043A96C988B7661A1ED00FF9AA424 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
 		5966AFB2091A3E0AEC4BB2106809301B /* Spring-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Spring-Info.plist"; sourceTree = "<group>"; };
 		59A8DEEF5C79B32D8C7175892B954A49 /* SDImageCacheDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDefine.h; path = SDWebImage/Core/SDImageCacheDefine.h; sourceTree = "<group>"; };
 		5A257172DDE138822964FEF37B26C0EB /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		5ABD3AAFCC1FDA9CE18FF00FD57DA5F8 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5B7EF68253BD4576F61BA27151060CED /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
 		5B9C6165153BD2663663BB7A8C7C9985 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
 		5B9E3B5262B7B474E4C1915A1E503F2C /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
@@ -413,6 +460,7 @@
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9E63B487776104AA31F8DF4D44517E /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/Core/SDWebImageError.h; sourceTree = "<group>"; };
 		5DC4C64D537D21362151225DC5D3AA84 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/Core/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		61F18A35A0396959CA704D1FEECD5496 /* Pods-Wallapop Marvel App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallapop Marvel App-dummy.m"; sourceTree = "<group>"; };
 		6217DACDE538F9DCB8E27DF982B317CB /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
 		627B5873119C43C1DC354B6F1620AABB /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
 		630BB3A0663C11815BFE009A58BDBC50 /* SDImageAWebPCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAWebPCoder.h; path = SDWebImage/Core/SDImageAWebPCoder.h; sourceTree = "<group>"; };
@@ -441,7 +489,6 @@
 		7A0A1BFAE1893434DD6B9628741F2D18 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/Core/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		7C4369962DE5427B73AB53379B2A76E0 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/Core/SDWebImageCompat.m; sourceTree = "<group>"; };
 		7D11BBB734663A47DE756307D69C9EB4 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		7E20D12E3D8BACCD88423A48B0ADCF21 /* Pods-Wallapop Marvel App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallapop Marvel App-dummy.m"; sourceTree = "<group>"; };
 		7F4F28D2B427B2AEE660F556731F42D7 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		8182966E3F37B66F88594A059396B843 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		820B88D461480D2280760D5D6AC4F128 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/Core/NSData+ImageContentType.m"; sourceTree = "<group>"; };
@@ -454,16 +501,17 @@
 		8762083920AC93AD76DC2EB1AE4EDD7B /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Spring.modulemap; sourceTree = "<group>"; };
 		8785C976094FDFB1CE23E09CBBB54808 /* ObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.release.xcconfig; sourceTree = "<group>"; };
 		879D892C8B60DDF247584F14C835FC20 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
-		88201CECB939804D7E3BD77D5A81940F /* Pods-Wallapop Marvel App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallapop Marvel App.modulemap"; sourceTree = "<group>"; };
 		883D182E2400815AC2273D35DE4579F0 /* NSImage+Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+Compatibility.h"; path = "SDWebImage/Core/NSImage+Compatibility.h"; sourceTree = "<group>"; };
 		897FFF7C843E4BB8A52A0AA45F54CDA4 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
 		8A2DF6FDBA972AC219145A6C0F32CD7A /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
 		8A81546A7C753C055D3571DE8819AE4F /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
 		8B16A0F7F91B613C63FBA99736765A06 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		8BD3AC1108F7CFD485B9C2241B8A6613 /* Pods-Wallapop Marvel App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallapop Marvel App-Info.plist"; sourceTree = "<group>"; };
 		8C2C05CE70B186F45B086303AAD9E7CE /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
 		8D1B09B6C64320898DAC471442BA38B5 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		8E237BF03CD57C637C69927380D1DB95 /* SDWebImageOptionsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOptionsProcessor.h; path = SDWebImage/Core/SDWebImageOptionsProcessor.h; sourceTree = "<group>"; };
 		8E74F10EA9563C58FF113189A2BDD1FB /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		8F369F917A1498D68AEA9EB20F673F35 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks.sh"; sourceTree = "<group>"; };
 		8FD462E333AE5F3D58108B209FD4DB42 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/Core/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		91606ADD9261DE91BA5ECF900530C1C1 /* SDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.debug.xcconfig; sourceTree = "<group>"; };
 		91734FCAABC8CE7728BF7B0601E53588 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
@@ -479,6 +527,7 @@
 		98EC3854F5D240375F1FB13097067EDB /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		99EC9CCA926583DCAD0FF59F123CD198 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
 		9BE9E74E5EA6224DDA2CEA314B9E7D69 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		9CACB601F4314A74F43B4D43BD5E8912 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D636D31F636AC52F8CF2DA528769515 /* UIColor+SDHexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDHexString.m"; path = "SDWebImage/Private/UIColor+SDHexString.m"; sourceTree = "<group>"; };
 		9D8F0DA7442B64790B9ACE720BD398D4 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -495,6 +544,7 @@
 		A538D28137219BCB8B2B1EFE36EE72A3 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/Core/UIView+WebCache.h"; sourceTree = "<group>"; };
 		A5EE885FF51565C87F58DA9542EAFF89 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
 		A611C8B2F0E289E9C135046594CF8DEF /* SDGraphicsImageRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDGraphicsImageRenderer.h; path = SDWebImage/Core/SDGraphicsImageRenderer.h; sourceTree = "<group>"; };
+		A6469EBCBCF770551E426B127E65F5BE /* Pods-Wallapop Marvel App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallapop Marvel App.modulemap"; sourceTree = "<group>"; };
 		A70809917B5899DC6BF5D60BC4355421 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		A8363C477C3FDE98C61856F70EB2D745 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		A94A809035F69A5863F41CB829DFF0D3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
@@ -548,7 +598,6 @@
 		D42B87DDC25B5F712A8722F1F11EDDFA /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		D64259927F08CC3014B1430810D393FB /* ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjectMapper-Info.plist"; sourceTree = "<group>"; };
 		D65B03095DF7DAA692857E52D99B92EB /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
-		D7422E4A5AFD131834AFA93E90611CB8 /* Pods-Wallapop Marvel App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallapop Marvel App.debug.xcconfig"; sourceTree = "<group>"; };
 		D7942DF133B2591783C85ADC47613D10 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/Core/UIImage+GIF.m"; sourceTree = "<group>"; };
 		D95D60CEFF017CB7511D21A2A128CBDA /* SDDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDisplayLink.h; path = SDWebImage/Private/SDDisplayLink.h; sourceTree = "<group>"; };
 		DB1A15A107E64C5C28063BA4F081CC43 /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/Core/SDImageGraphics.m; sourceTree = "<group>"; };
@@ -577,15 +626,14 @@
 		F1FE10E95EAF491B51B20EEC0BBF4EA6 /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
 		F3535C263C69926AD4DB0A177B8E1DF2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		F3AF6B29E3C90BE585D4F65EBA085C14 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
-		F542ACF4FC06D878038004080925E727 /* Pods-Wallapop Marvel App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallapop Marvel App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F592237BC9BA717F211876ED73AFF06C /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
 		F6EB6ABBA2642A1F96DF13105329D94A /* SDAnimatedImagePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImagePlayer.h; path = SDWebImage/Core/SDAnimatedImagePlayer.h; sourceTree = "<group>"; };
 		F96E20E877A059BC1AD3D9A38BA6AD13 /* Spring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.debug.xcconfig; sourceTree = "<group>"; };
 		FA4732030F418D95DBE331F92C4C451C /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
-		FAAEA0151EA0277EC0674F8445DB37EE /* Pods-Wallapop Marvel App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallapop Marvel App-umbrella.h"; sourceTree = "<group>"; };
 		FB920AADA761BF4C011C26B2F93E5D5F /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
 		FD9B6ADB9D3D18ED0D65E6A470726634 /* UIImage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Transform.m"; path = "SDWebImage/Core/UIImage+Transform.m"; sourceTree = "<group>"; };
 		FEE92D5469CBF28C74793A4C81613120 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
+		FF5E279C12F425DAF7BDEB0D58C69C37 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests"; path = Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,6 +651,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				325CCDB295FFA016638075B5D2CEDD5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5926BAD1B8E64E07C8784AA6370131B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2A85F3B4553B9ED6CAE0701173515A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +706,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		13498A0B9DA61B631455A709A8E91912 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DCFDB61460C8F1D24DC03BA6731ABDC /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.modulemap */,
+				326685BABDC5BBDCA341737C914357A1 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.markdown */,
+				5ABD3AAFCC1FDA9CE18FF00FD57DA5F8 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-acknowledgements.plist */,
+				0B9153AB059482668FC7D34B90361C32 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m */,
+				8F369F917A1498D68AEA9EB20F673F35 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-frameworks.sh */,
+				57C2EC68D89F768BD97FA78600371981 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-Info.plist */,
+				3526F6338E1713440E2A45879B25895D /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h */,
+				9CACB601F4314A74F43B4D43BD5E8912 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */,
+				429306177BEC37034484187F3D927B9F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */,
+			);
+			name = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests";
+			path = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests";
+			sourceTree = "<group>";
+		};
 		24D06B797368A7FA33EAEDFC7899059A /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +756,23 @@
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
+		46E43A6E1BFF53E9FE9BA80689156521 /* Pods-Wallapop Marvel App */ = {
+			isa = PBXGroup;
+			children = (
+				A6469EBCBCF770551E426B127E65F5BE /* Pods-Wallapop Marvel App.modulemap */,
+				03FC356D589DADD3F58B3AD63C80FADF /* Pods-Wallapop Marvel App-acknowledgements.markdown */,
+				2208BBD11C72A253A97938B23EE9BB61 /* Pods-Wallapop Marvel App-acknowledgements.plist */,
+				61F18A35A0396959CA704D1FEECD5496 /* Pods-Wallapop Marvel App-dummy.m */,
+				5813459A3A486A0D6969798422E1F655 /* Pods-Wallapop Marvel App-frameworks.sh */,
+				8BD3AC1108F7CFD485B9C2241B8A6613 /* Pods-Wallapop Marvel App-Info.plist */,
+				0F09103413B321D68628C4093FD38B1B /* Pods-Wallapop Marvel App-umbrella.h */,
+				0DC4AB8A2B7520E2E4EB896A91F6F7C8 /* Pods-Wallapop Marvel App.debug.xcconfig */,
+				2871B63F24B31F4C87BE57597933C803 /* Pods-Wallapop Marvel App.release.xcconfig */,
+			);
+			name = "Pods-Wallapop Marvel App";
+			path = "Target Support Files/Pods-Wallapop Marvel App";
+			sourceTree = "<group>";
+		};
 		4C9B1CD4DF3304D9D75A061779F4B702 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,19 +786,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		573FB682E8E1BCABCAD478C90D255F17 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */,
-				6A08ACA6AB80184875CC8A783639A9B6 /* Pods-Wallapop Marvel App */,
-				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
-				3F136A20734AD27CC397572C4E62ADCE /* Spring */,
-				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5C01EE964F4A76CFE3FBE09ECF5773EB /* Support Files */ = {
@@ -875,23 +952,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		6A6996ED91DDB2AE73A54FF0EDE5E27C /* Pods-Wallapop Marvel App */ = {
-			isa = PBXGroup;
-			children = (
-				88201CECB939804D7E3BD77D5A81940F /* Pods-Wallapop Marvel App.modulemap */,
-				F542ACF4FC06D878038004080925E727 /* Pods-Wallapop Marvel App-acknowledgements.markdown */,
-				41555EBF3137740EAB94E9A6263F185E /* Pods-Wallapop Marvel App-acknowledgements.plist */,
-				7E20D12E3D8BACCD88423A48B0ADCF21 /* Pods-Wallapop Marvel App-dummy.m */,
-				3C6A7363E276AFB2C93BE2FFF7B62B9B /* Pods-Wallapop Marvel App-frameworks.sh */,
-				460272937C1D23AEA065D3B2D9C593AC /* Pods-Wallapop Marvel App-Info.plist */,
-				FAAEA0151EA0277EC0674F8445DB37EE /* Pods-Wallapop Marvel App-umbrella.h */,
-				D7422E4A5AFD131834AFA93E90611CB8 /* Pods-Wallapop Marvel App.debug.xcconfig */,
-				55142E1E278C010C4300230CCAE92352 /* Pods-Wallapop Marvel App.release.xcconfig */,
-			);
-			name = "Pods-Wallapop Marvel App";
-			path = "Target Support Files/Pods-Wallapop Marvel App";
-			sourceTree = "<group>";
-		};
 		854BDC0F8ED100C122D02DDE98FF1875 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,14 +979,6 @@
 			);
 			name = SDWebImage;
 			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		C92EE6C5A6907B6D4F09FD9392803CE4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6A6996ED91DDB2AE73A54FF0EDE5E27C /* Pods-Wallapop Marvel App */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CAEEF53DBDDBC8E164BF5F84C4B9F5A4 /* Alamofire */ = {
@@ -974,6 +1026,15 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+		CBB60983FC19167D218346161A3E263F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E43A6E1BFF53E9FE9BA80689156521 /* Pods-Wallapop Marvel App */,
+				13498A0B9DA61B631455A709A8E91912 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		CC755DC2B558CF0470EC9F7A91F844EF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1002,8 +1063,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				CC755DC2B558CF0470EC9F7A91F844EF /* Pods */,
-				573FB682E8E1BCABCAD478C90D255F17 /* Products */,
-				C92EE6C5A6907B6D4F09FD9392803CE4 /* Targets Support Files */,
+				FCE601947CB09740C1B7EB971372A1AB /* Products */,
+				CBB60983FC19167D218346161A3E263F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1074,6 +1135,20 @@
 			path = "../Target Support Files/ObjectMapper";
 			sourceTree = "<group>";
 		};
+		FCE601947CB09740C1B7EB971372A1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper */,
+				6A08ACA6AB80184875CC8A783639A9B6 /* Pods-Wallapop Marvel App */,
+				FF5E279C12F425DAF7BDEB0D58C69C37 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */,
+				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
+				3F136A20734AD27CC397572C4E62ADCE /* Spring */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FF8E3270E8A14D20CDA3BB881974E421 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1092,6 +1167,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0C5E527B1C20C4EC9E17C25AE7931169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8762B8E285BC9B845FAE40F1DAA7D29B /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		104737A7F2F8176AF07A40A019B4DC37 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1275,6 +1358,29 @@
 			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */;
 			productType = "com.apple.product-type.framework";
 		};
+		4841BC3F360FF712A01F82780857380C /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D46D25B02BD896525D74E52DE21322 /* Build configuration list for PBXNativeTarget "Pods-Wallapop Marvel App-Wallapop Marvel AppTests" */;
+			buildPhases = (
+				0C5E527B1C20C4EC9E17C25AE7931169 /* Headers */,
+				72D7B653ACFC23324452FACFC3881965 /* Sources */,
+				5926BAD1B8E64E07C8784AA6370131B8 /* Frameworks */,
+				A5378B6860F3526A6DE563A3942BE32D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC607373E26C91FF21CDCEB08473BB9 /* PBXTargetDependency */,
+				F2D2D66AE506D5665113514C415213AE /* PBXTargetDependency */,
+				ACA216A2D616EC8FF419D9374296624E /* PBXTargetDependency */,
+				8C8BCCA74F8B94A2BE9AAF6709F75309 /* PBXTargetDependency */,
+				9A1C12B5A133C8EEE02EEA3E2E0361A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Wallapop Marvel App-Wallapop Marvel AppTests";
+			productName = Pods_Wallapop_Marvel_App_Wallapop_Marvel_AppTests;
+			productReference = FF5E279C12F425DAF7BDEB0D58C69C37 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */;
+			productType = "com.apple.product-type.framework";
+		};
 		A062DD8462AB228A88272FF6B09535E9 /* Spring */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A2FE21CA9AF5AFF59CFBA5A82939231 /* Build configuration list for PBXNativeTarget "Spring" */;
@@ -1347,13 +1453,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 573FB682E8E1BCABCAD478C90D255F17 /* Products */;
+			productRefGroup = FCE601947CB09740C1B7EB971372A1AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */,
 				0E47707E15248A49C5BFFAB7CD1EC52B /* Pods-Wallapop Marvel App */,
+				4841BC3F360FF712A01F82780857380C /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests */,
 				3847153A6E5EEFB86565BA840768F429 /* SDWebImage */,
 				A062DD8462AB228A88272FF6B09535E9 /* Spring */,
 				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
@@ -1363,6 +1470,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		25791203AC3E635729D84FC9759B1777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5378B6860F3526A6DE563A3942BE32D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1483,6 +1597,14 @@
 				10E9E4249C8C22A571EBFECF3C0676CC /* UIImageView+WebCache.m in Sources */,
 				A3BFF0CDB72BC173BEA1C8ADDBDB0D1D /* UIView+WebCache.m in Sources */,
 				429E5CC928985357D07058FDEE8069FA /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D7B653ACFC23324452FACFC3881965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CFDE0F42E637F6127F7D32BC5C228D /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,6 +1745,12 @@
 			target = A062DD8462AB228A88272FF6B09535E9 /* Spring */;
 			targetProxy = CC62860857A671C50FD74E83FEB50831 /* PBXContainerItemProxy */;
 		};
+		5BC607373E26C91FF21CDCEB08473BB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 20C37B31BBED9046B37FEEDBA8A88991 /* PBXContainerItemProxy */;
+		};
 		6786F03B076AB29AEF389D419AC10698 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
@@ -1635,17 +1763,41 @@
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 7EDDBBCFE57FFFE27961EBE7DBD3FB39 /* PBXContainerItemProxy */;
 		};
+		8C8BCCA74F8B94A2BE9AAF6709F75309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = A062DD8462AB228A88272FF6B09535E9 /* Spring */;
+			targetProxy = E635DD409001607C53512DA2B8E63E83 /* PBXContainerItemProxy */;
+		};
+		9A1C12B5A133C8EEE02EEA3E2E0361A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 4885EE71B6440B915C7AA580837316B5 /* PBXContainerItemProxy */;
+		};
 		9C63D19593FDCAED3D7696E12270D7F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjectMapper;
 			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
 			targetProxy = E10D976DE3F1F1DE00E50676C51DA8C8 /* PBXContainerItemProxy */;
 		};
+		ACA216A2D616EC8FF419D9374296624E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = 55A7580C2BF0B81719A85EF35B8D744E /* PBXContainerItemProxy */;
+		};
 		AE7351595865666A796298642AF5C738 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
 			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
 			targetProxy = 6037ABED12C6677C53F62A198F74FE0B /* PBXContainerItemProxy */;
+		};
+		F2D2D66AE506D5665113514C415213AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 2D3F1EE6D2A91C6F22428D63C5E7C8F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1713,6 +1865,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		516CCD96635238F07A1A1A928994AABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429306177BEC37034484187F3D927B9F /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1790,7 +1980,7 @@
 		};
 		8AE21578E0B1CEE89BD9D0FF88C150F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55142E1E278C010C4300230CCAE92352 /* Pods-Wallapop Marvel App.release.xcconfig */;
+			baseConfigurationReference = 2871B63F24B31F4C87BE57597933C803 /* Pods-Wallapop Marvel App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1930,7 +2120,7 @@
 		};
 		953F526C9841F02571F4B97119ACA77B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7422E4A5AFD131834AFA93E90611CB8 /* Pods-Wallapop Marvel App.debug.xcconfig */;
+			baseConfigurationReference = 0DC4AB8A2B7520E2E4EB896A91F6F7C8 /* Pods-Wallapop Marvel App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2200,6 +2390,43 @@
 			};
 			name = Debug;
 		};
+		E0B9B7AEF9574E08983DB92646CD5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CACB601F4314A74F43B4D43BD5E8912 /* Pods-Wallapop Marvel App-Wallapop Marvel AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Wallapop Marvel App-Wallapop Marvel AppTests/Pods-Wallapop Marvel App-Wallapop Marvel AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2262,6 +2489,15 @@
 			buildConfigurations = (
 				B0A83E2B33F87D1C7856C6DF93404465 /* Debug */,
 				00403A510F1318D67AA55C1B4DCB17FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7D46D25B02BD896525D74E52DE21322 /* Build configuration list for PBXNativeTarget "Pods-Wallapop Marvel App-Wallapop Marvel AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B9B7AEF9574E08983DB92646CD5C9C /* Debug */,
+				516CCD96635238F07A1A1A928994AABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

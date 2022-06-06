@@ -13,4 +13,10 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'ObjectMapper'
 
+  target 'Wallapop Marvel AppTests' do
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'ObjectMapper'
+  end
+
 end

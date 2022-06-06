@@ -10,6 +10,7 @@ import Spring
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var openSearchBtn: UIButton!
     @IBOutlet weak var listBtn: UIButton!
     @IBOutlet weak var gridBtn: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -41,7 +42,7 @@ class HomeViewController: UIViewController {
         // TableView customization
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorColor = .black
+        tableView.separatorColor = UIColor(named: "Black")
         tableView.separatorStyle = .singleLine
         tableView.register(ComicTableViewCell.nib, forCellReuseIdentifier: ComicTableViewCell.identifier)
         
@@ -122,11 +123,11 @@ class HomeViewController: UIViewController {
 
                 collectionviewContainer.animateToNext {
                     UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
-                        self.collectionviewContainer.alpha = 0
                         self.tableviewContainer.alpha = 1
                         self.view.layoutIfNeeded()
                     }
                 }
+                self.collectionviewContainer.alpha = 0
                 self.tableviewContainer.animate()
             }
         }else{
@@ -138,15 +139,34 @@ class HomeViewController: UIViewController {
                 self.collectionviewContainer.animation = "squeezeLeft"
                 tableviewContainer.animateToNext {
                     UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
-                        self.tableviewContainer.alpha = 0
                         self.collectionviewContainer.alpha = 1
                         self.view.layoutIfNeeded()
                     }
                 }
+                self.tableviewContainer.alpha = 0
                 self.collectionviewContainer.animate()
 
             }
         }
+    }
+    @IBAction func searchBtnAction(_ sender: UIButton) {
+        searchAction(textfield: searchTextField)
+    }
+    func searchAction(textfield: UITextField){
+        self.view.endEditing(true)
+        if searchText != textfield.text ?? ""{
+            MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
+            searchText = textfield.text ?? ""
+            
+            if !MyController.isEmptyString(text: textfield.text ?? ""){
+                page = 0
+                viewModel.getComicsByTitle(offset: page, title: textfield.text!)
+            }else{
+                page = 0
+                viewModel.getComics(offset:page)
+            }
+        }
+
     }
     func loadMore(){
         page = page + 25
@@ -265,19 +285,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - UITextFieldDelegate
 extension HomeViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        if searchText != textField.text ?? ""{
-            MyController.showDefaultLoading(vc: self, blur: false, colorName: .red)
-            searchText = textField.text ?? ""
-            
-            if !MyController.isEmptyString(text: textField.text ?? ""){
-                page = 0
-                viewModel.getComicsByTitle(offset: page, title: textField.text!)
-            }else{
-                page = 0
-                viewModel.getComics(offset:page)
-            }
-        }
+        searchAction(textfield: textField)
         return true
     }
 }

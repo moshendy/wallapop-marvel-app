@@ -33,12 +33,12 @@ class ComicsService: ComicsServiceProtocol {
                         let mainJSON = Mapper<Comic>().mapArray(JSONArray: responseJSON["data"]["results"].rawValue as! [[String : Any]])
                         let mainContainer = Mapper<ComicDataContainer>().map(JSON: responseJSON["data"].rawValue as! [String : Any])
                         
-                        completion(true, mainJSON,mainContainer, nil)
+                        completion(true, mainJSON,mainContainer, "Success: 200")
                     }else{
-                        completion(false, nil, nil, "Error: Trying to parse Comics to model")
+                        completion(false, nil, nil, "Error: Api Failure")
                     }
                 case .failure(_):
-                    completion(false, nil, nil, "Error: Api Failure")
+                    completion(false, nil, nil, "Error: 500")
                 }
             }
     }
@@ -56,12 +56,12 @@ class ComicsService: ComicsServiceProtocol {
                         let mainJSON = Mapper<Comic>().mapArray(JSONArray: responseJSON["data"]["results"].rawValue as! [[String : Any]])
                         let mainContainer = Mapper<ComicDataContainer>().map(JSON: responseJSON["data"].rawValue as! [String : Any])
                         
-                        completion(true, mainJSON,mainContainer, nil)
+                        completion(true, mainJSON,mainContainer, "Success: 200")
                     }else{
-                        completion(false, nil, nil, "Error: Trying to parse Comics to model")
+                        completion(false, nil, nil, "Error: Api Failure")
                     }
                 case .failure(_):
-                    completion(false, nil, nil, "Error: Api Failure")
+                    completion(false, nil, nil, "Error: 500")
                 }
             }
     }

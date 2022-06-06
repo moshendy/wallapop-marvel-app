@@ -9,8 +9,10 @@ import Foundation
 
 struct Constants{
     
-    static let homeVC: String = "homeVC"
     static let splashVC: String = "splashVC"
+    static let homeNC: String = "homeNC"
+    static let homeVC: String = "homeVC"
+    static let comicVC: String = "comicVC"
     static let homeSegue: String = "homeSegue"
     static let viewComicSegue: String = "viewComicSegue"
 

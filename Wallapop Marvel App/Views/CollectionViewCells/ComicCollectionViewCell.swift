@@ -20,8 +20,10 @@ class ComicCollectionViewCell: UICollectionViewCell {
     
     var cellViewModel: ComicCellViewModel? {
         didSet {
-            nameLabel.text = cellViewModel?.title
+            
             mainVIew.ShadowUIView()
+            nameLabel.text = cellViewModel?.title
+
             let stringURL = "\(cellViewModel?.image ?? "")\(ApisURL.imageStandardExt)\(cellViewModel?.imageExt ?? "")"
             if stringURL.contains("image_not_available") {
                 cellImage.image = UIImage(named: "mainLogo")

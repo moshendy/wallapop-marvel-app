@@ -19,6 +19,7 @@ class ComicTableViewCell: UITableViewCell {
     
     var cellViewModel: ComicCellViewModel? {
         didSet {
+            
             nameLabel.text = cellViewModel?.title
             
             let stringURL = "\(cellViewModel?.image ?? "")\(ApisURL.imageStandardExt)\(cellViewModel?.imageExt ?? "")"

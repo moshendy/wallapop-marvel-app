@@ -160,7 +160,7 @@ class MyController {
 
     
     public static func showDefaultLoading(vc: UIViewController,blur:Bool,Dark:Bool = false,colorName : UIColor){
-        vc.view.isUserInteractionEnabled = false
+//        vc.view.isUserInteractionEnabled = false
 
         let activityView = UIActivityIndicatorView(style: .large)
         activityView.color = colorName
